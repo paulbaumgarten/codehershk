@@ -32,7 +32,7 @@ export default function IntroductionToSchoolsPage() {
           <div className="flex flex-col gap-4 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
             {/* PDF Download */}
             <Link
-              href="./CodeHers Letter of introduction 2025.pdf"
+              href="./school-introduction/CodeHers Letter of introduction 2025.pdf"
               target="_blank"
               className="relative top-0 inline-flex items-center justify-center px-8 py-2 text-base font-medium leading-loose text-center duration-300 ease-out rounded-lg hover:-top-2 transition-all bg-secondary-100 text-text-700"
             >
