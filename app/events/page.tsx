@@ -85,7 +85,7 @@ export default function CurrentEventsPage() {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
-            href="/marketing/CodeHers 2025 Poster.pdf"
+            href="/marketing/2025poster.pdf"
             target="_blank"
             className="inline-block px-4 py-2 text-base font-medium leading-loose text-white rounded-lg bg-accent-500 hover:bg-accent-600 transition-all"
           >
