@@ -157,7 +157,7 @@ export const all = (splice: number = -1, shuffled: boolean = true): Array<string
 		'/event/all/DSC_0353.JPG',
 		'/event/all/DSC_0358.JPG',
 		'/event/all/unnamed.jpeg',
-	].map((item) => {return isProd ? '/codehershk' : '' + item})
+	].map((item) => {return (isProd ? '/codehershk' : '') + item})
 
 	if (shuffled)
 		items = shuffleArray(items)

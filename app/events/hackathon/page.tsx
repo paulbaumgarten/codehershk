@@ -36,15 +36,22 @@ export default function HackathonPage() {
           {/* Buttons */}
           <div className="flex flex-col gap-4 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
             <div className="relative inline-flex items-center justify-center ease-out group">
-              <div className="absolute duration-1000 transitiona-all opacity-70 -inset-px bg-primary-500 blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-300 animate-tilt"></div>
+              <div className="absolute duration-1000 transition-all opacity-70 -inset-px bg-primary-500 blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-300 animate-tilt"></div>
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSenBLL85ajsWR1DxIGWLyJPJD7_SYaCtRzrhOAVOqleVyIKFA/viewform"
-                className="relative top-0 inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:-top-2 transitiona-all"
+                className="relative top-0 inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:-top-2 transition-all"
                 target="_blank"
               >
                 Sign Up
               </Link>
             </div>
+
+            <Link
+              href="/events"
+              className="relative top-0 inline-flex items-center justify-center px-8 py-2 text-base font-medium leading-loose text-center duration-300 ease-out rounded-lg hover:-top-2 transition-all bg-secondary-100 text-text-700"
+            >
+              Other Events
+            </Link>
           </div>
         </div>
         {/* OPTIONAL: Put an image/graphic on the right */}
@@ -80,7 +87,7 @@ export default function HackathonPage() {
                     w-4 h-4
                     rounded-full
                     bg-primary-500
-					shadow
+                    shadow
                   "
                 />
                 <h4 className="font-semibold text-text-900">{event.title}</h4>
@@ -191,10 +198,12 @@ export default function HackathonPage() {
               AI Tools are allowed, but you must truly understand your code (no blindly copy-pasting).
             </li>
             <li>
-              Original work is required, meaning no old projects. Everything should be created during the hackathon period.
+              Original work is required, meaning no old projects. Everything
+              should be created during the hackathon period.
             </li>
             <li>
-              Teachers, parents, or mentors, anyone not in your group, can’t directly assist with coding or design. This is your time to shine!
+              Teachers, parents, or mentors, anyone not in your group, can’t directly assist
+              with coding or design. This is your time to shine!
             </li>
             <li>
               Provide a 10-minute video plus your code. Top teams present live on March 15th.
