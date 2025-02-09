@@ -4,7 +4,6 @@ import getWorkshopsCategories from "./GetWorkshopsCategories";
 
 export default function WorkshopsSection() {
   const workshopsCategories = getWorkshopsCategories();
-  const isProd = process.env.NODE_ENV === 'production';
 
   const workshopCards = workshopsCategories.map((workshop: any) => {
     return (
@@ -14,7 +13,7 @@ export default function WorkshopsSection() {
       >
         <Image
           alt={workshop.title}
-          src={isProd ? '/codehershk/' + `workshop-icons/${workshop.icon}` : `/workshop-icons/${workshop.icon}`}
+          src={`/workshop-icons/${workshop.icon}`}
           width={0}
           height={0}
           className="w-10 h-10 mb-3"

@@ -1,5 +1,3 @@
-const isProd = process.env.NODE_ENV === 'production';
-
 interface Picture {
 	front: string,
 	back: string
@@ -51,13 +49,5 @@ let pictures: Array<Picture> = [
 		back: "/team/students/WIS_2.png"
 	},
 ]
-
-for (let pic in pictures) {
-	let front = pictures[pic].front
-	let back = pictures[pic].back
-
-	pictures[pic].front = isProd ? '/codehershk' + front : front
-	pictures[pic].back = isProd ? '/codehershk' + back: back
-}
 
 export default pictures

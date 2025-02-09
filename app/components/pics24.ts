@@ -1,5 +1,3 @@
-const isProd = process.env.NODE_ENV === 'production';
-
 const list = ['/event/audreySpeech.jpeg',
 	'/event/electronics.jpg',
 	'/event/fullHall.JPG',
@@ -157,7 +155,7 @@ export const all = (splice: number = -1, shuffled: boolean = true): Array<string
 		'/event/all/DSC_0353.JPG',
 		'/event/all/DSC_0358.JPG',
 		'/event/all/unnamed.jpeg',
-	].map((item) => {return (isProd ? '/codehershk' : '') + item})
+	]
 
 	if (shuffled)
 		items = shuffleArray(items)
@@ -168,4 +166,4 @@ export const all = (splice: number = -1, shuffled: boolean = true): Array<string
 		return items.splice(0, splice)
 }
 
-export default isProd ? list.map((item) => {return ('/codehershk'+item)}) : list
+export default list

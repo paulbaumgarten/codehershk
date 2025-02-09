@@ -1,14 +1,13 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === 'production';
 // CHANGE ON PROPER DEPLOY
 const nextConfig = {
   reactStrictMode: true,
   images: {
-      unoptimized: true, 
+      unoptimized: false, 
     },
-  assetPrefix: isProd ? '/codehershk/' : '',
-  basePath: isProd ? '/codehershk' : '',
+  assetPrefix: '',
+  basePath: '',
   output: 'export'
 };
 
