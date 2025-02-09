@@ -2,8 +2,8 @@
 
 const nextConfig = {
   output: 'export',
-  images: { unoptimized: false },
-  assetPrefix: '',
-  basePath: '',
+  images: { unoptimized: true },
+  basePrefix: '',
+  assetPrefix: ''
 }
 export default nextConfig;

@@ -2,6 +2,7 @@
   "name": "codehers-hk",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://codehers.org",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
