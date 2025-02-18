@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -7,8 +7,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { motion } from "framer-motion";
 import pics24 from "./components/pics24";
-
-import '@splidejs/react-splide/css';
+import "@splidejs/react-splide/css";
 
 export default function Home() {
   return (
@@ -62,7 +61,10 @@ export default function Home() {
             className="rounded-xl shadow-lg overflow-hidden"
           >
             {pics24.map((img, index) => (
-              <SplideSlide key={index} className="overflow-hidden h-[400px] w-[600px]">
+              <SplideSlide
+                key={index}
+                className="overflow-hidden h-[400px] w-[600px]"
+              >
                 <Image
                   src={img}
                   alt={img}
@@ -85,7 +87,7 @@ export default function Home() {
         </h2>
         <div className="grow flex-col md:flex-row flex gap-6">
           <div className="md:w-1/2 flex-col space-y-6">
-            <div >
+            <div>
               <h5 className="block text-xl font-medium leading-6 tracking-wide text-text-900">
                 Time & Date
               </h5>
@@ -93,13 +95,13 @@ export default function Home() {
                 Saturday 15th March 2025 11:00am to 5:00pm
               </p>
             </div>
-            <div> 
+            <div>
               <h5 className="block text-xl font-medium leading-6 tracking-wide text-text-900">
                 Venue
               </h5>
               <p className="text-text-600 text-lg">
-              Victoria Shanghai Academy, 19 Shum Wan Road
-              Aberdeen, Hong Kong
+                Victoria Shanghai Academy, 19 Shum Wan Road
+                Aberdeen, Hong Kong
               </p>
             </div>
             <div>
@@ -114,16 +116,22 @@ export default function Home() {
               <h5 className="block text-xl font-medium leading-6 tracking-wide text-text-900">
                 Cost
               </h5>
-              <p className="text-text-600 text-lg">Free! Includes free lunch and merchandise!</p>
+              <p className="text-text-600 text-lg">
+                Free! Includes free lunch and merchandise!
+              </p>
             </div>
           </div>
-        <div className="grow md:w-1/2 lg:w-1/3 flex flex-col justify-center h-72 md:h-auto">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.9566727193946!2d114.16393337356682!3d22.241722645019458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3406aaa0131d0785%3A0x379649d90714e1a7!2sVictoria%20Shanghai%20Academy!5e0!3m2!1sen!2shk!4v1738038640705!5m2!1sen!2shk" 
-            className="w-full h-full md:h-2/3 lg:h-full rounded-xl" 
-            loading="lazy">
-          </iframe>
-        </div>
+
+          {/* Promotional Video Replaces Google Maps Embed */}
+          <div className="grow md:w-1/2 lg:w-1/3 flex flex-col justify-center h-72 md:h-auto">
+            <iframe
+              src="https://www.youtube.com/embed/4yTva9Ncbrs"
+              className="w-full h-full md:h-2/3 lg:h-full rounded-xl"
+              title="Promotional Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </div>
       </div>
 
@@ -183,10 +191,10 @@ function SchoolCredits() {
       <div className="grid overflow-hidden w-full grid-cols-2 gap-3 px-8 py-6 rounded-lg lg:gap-1 bg-secondary-500/10 lg:h-32 justify-items-center md:grid-cols-3 lg:flex lg:flex-row lg:space-x-3 lg:items-center lg:justify-center xl:justify-around">
         <Splide
           options={{
-            type: 'loop',
-            drag: 'free',
+            type: "loop",
+            drag: "free",
             autoWidth: true,
-            gap: '10px',
+            gap: "10px",
             arrows: false,
             pagination: false,
             autoScroll: {
