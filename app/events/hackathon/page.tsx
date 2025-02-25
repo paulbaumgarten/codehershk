@@ -1,14 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { useId } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function HackathonPage() {
   // For timeline
   const timelineEvents = [
-    { title: "Sign-ups Deadline", date: "February 25th" },
+    { title: "Initial Interest Deadline", date: "February 25th" },
     { title: "Hackathon Launch", date: "February 27th" },
-    { title: "Project Submission", date: "March 13th" },
+    { title: "Hackathon Submission Deadline", date: "March 13th" },
     { title: "Finalists Shortlist", date: "March 14th" },
     { title: "Live Finals", date: "March 15th (Award Ceremony)" },
   ];
@@ -213,7 +215,52 @@ export default function HackathonPage() {
             </li>
           </ul>
         </div>
+
       </div>
+
+      {/* Theme Section */}
+        <div>
+          <h3 className="text-2xl font-bold text-text-900 mb-4">
+            Theme
+          </h3>
+          <p className="text-text-700 mb-4">
+            The theme of the project will be released both <strong>here</strong> on this website and will be emailed to all participants who signed up via the initial interest form.
+          </p>
+        </div>
+        
+      {/* Submission Section */}
+        <div>
+          <h3 className="text-2xl font-bold text-text-900 mb-4">
+            Submission
+          </h3>
+          <p className="text-text-700 mb-4">
+            Once you've finished making your project and presentation, you should make a 10-minute long video with narration to both demonstrate your project and show off your presentation. You'll be submitting both this video and an <strong>accessible</strong> link to your codebase <i>(we recommend all participants to use <Link href="https://github.com/" className="text-primary-500 underline hover:text-primary-600">GitHub</Link> to store their code)</i> so we can run and review your code. Make sure to show passion and engagement in your presentation!
+          </p>
+        </div>
+
+      <section className="pb-4">
+        <h2 className="text-2xl font-bold text-text-900 mb-4">
+          Frequently Asked Questions
+        </h2>
+        <div className="flex flex-col space-y-2">
+          <FAQItem
+            question="Who can join the hackathon?"
+            answer="Any high-school HK student passionate about women empowerment and tech is welcome! No matter your gender or school, you can submit your project to our hackathon!"
+          />
+          <FAQItem
+            question="Do I need prior coding experience?"
+            answer="Depending on the division you select, you'll only need to know enough to build a small project. Note AI is allowed to help you build your project!"
+          />
+          <FAQItem
+            question="Is it okay if I still submit my project despite not filling in the initial interest form?"
+            answer="That's perfectly fine! We're only using that form to gain insight on who's interested initially. As long as you submit your project on time, we will consider it as a fair candidate and will judge fairly."
+          />
+          <FAQItem
+            question="What if there are extenuating circumstances affecting my performance and final submission?"
+            answer="No worries, that is completely understandable. If this is the case, please contact us immediately at codehershk@gmail.com to make your case and we will judge you as fair as possible!"
+          />
+        </div>
+      </section>
 
       {/* CTA at bottom (like homepage's final section) */}
       <div className="w-full py-10 mx-auto space-y-8 text-center lg:py-16">
@@ -236,5 +283,34 @@ export default function HackathonPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+function FAQItem({ question, answer }: { question: string; answer: ReactNode }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="bg-secondary-500/10 rounded-lg p-4 shadow">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full text-left flex items-center justify-between focus:outline-none"
+      >
+        <span className="text-text-900 font-semibold">{question}</span>
+        <span className="text-text-600 ml-2">{open ? "−" : "+"}</span>
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            key="faq-content"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            <p className="text-text-600 mt-2">{answer}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
