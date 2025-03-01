@@ -35,26 +35,33 @@ export default function HackathonPage() {
             friends) or go solo, and put your coding chops to the test. Winners
             will be announced live on March 15th!
           </p>
-          {/* Buttons */}
-          <div className="flex flex-col gap-4 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-            <div className="relative inline-flex items-center justify-center ease-out group">
-              <div className="absolute duration-1000 transition-all opacity-70 -inset-px bg-primary-500 blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-300 animate-tilt"></div>
-              <Link
-                href="https://forms.gle/aPcWkbQxVxUh2GPj8"
-                className="relative top-0 inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:-top-2 transition-all"
-                target="_blank"
-              >
-                Sign Up
-              </Link>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+          {/* Submit Work Button */}
+          <Link
+            href="/hackathon/submit"
+            className="inline-flex items-center justify-center px-6 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500 hover:bg-primary-600 transition-all"
+          >
+            Submit Work
+          </Link>
 
-            <Link
-              href="/events"
-              className="relative top-0 inline-flex items-center justify-center px-8 py-2 text-base font-medium leading-loose text-center duration-300 ease-out rounded-lg hover:-top-2 transition-all bg-secondary-100 text-text-700"
-            >
-              Other Events
-            </Link>
-          </div>
+          {/* Hackathon PDF Button */}
+          <Link
+            href="/hackathon/HackathonIntroduction.pdf"
+            target="_blank"
+            className="inline-flex items-center justify-center px-6 py-2 text-base font-medium leading-loose text-center bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-all"
+          >
+            View Hackathon Guide
+          </Link>
+          
+          {/* Other Events Button */}
+          <Link
+            href="/events"
+            className="inline-flex items-center justify-center px-6 py-2 text-base font-medium leading-loose text-center bg-secondary-100 text-text-700 rounded-lg hover:bg-secondary-200 transition-all"
+          >
+            Other Events
+          </Link>
+        </div>
+
         </div>
         {/* OPTIONAL: Put an image/graphic on the right */}
         <div className="flex-grow" />
@@ -219,14 +226,67 @@ export default function HackathonPage() {
       </div>
 
       {/* Theme Section */}
-        <div>
-          <h3 className="text-2xl font-bold text-text-900 mb-4">
-            Theme
-          </h3>
-          <p className="text-text-700 mb-4">
-            The theme of the project will be released both <strong>here</strong> on this website and will be emailed to all participants who signed up via the initial interest form.
+      <div className="space-y-6 mb-7">
+        <h3 className="text-2xl font-bold text-text-900">Theme</h3>
+        <p className="text-text-700">
+          This year's overarching theme focuses on developing innovative apps or technology tools that enhance the lives of girls and women, addressing gaps overlooked by major tech companies.
+        </p>
+
+        {/* Sub-themes */}
+        <h4 className="text-xl font-semibold text-text-900">Sub-themes</h4>
+        <p className="text-text-700">
+          Beneath the overarching theme of female empowerment, participants are encouraged to align their projects with one or more of the following sub-themes:
+        </p>
+
+        {/* Education */}
+        <div className="bg-secondary-500/10 p-4 rounded-lg shadow">
+          <h5 className="text-lg font-semibold text-text-900">Education</h5>
+          <p className="text-text-700">
+            Create a tool that makes education more accessible for girls and women. 
+            </p>
+            <p className="text-text-700 mt-1">
+            <strong>Example projects:</strong>
           </p>
+          <ul className="list-disc list-inside text-text-700 mt-2 space-y-1">
+            <li>An offline learning app for girls in areas with limited internet access.</li>
+            <li>A platform connecting girls with female mentors in STEM.</li>
+            <li>A gamified app to teach coding or science to young girls.</li>
+          </ul>
         </div>
+
+        {/* Sustainability and Environment */}
+        <div className="bg-secondary-500/10 p-4 rounded-lg shadow">
+          <h5 className="text-lg font-semibold text-text-900">Sustainability and Environment</h5>
+          <p className="text-text-700">
+            Build a product that helps women adopt sustainable practices or lead eco-friendly initiatives. 
+            </p>
+            <p className="text-text-700 mt-1">
+            <strong>Example projects:</strong>
+          </p>
+          <ul className="list-disc list-inside text-text-700 mt-2 space-y-1">
+            <li>A platform for women to share tips on sustainable living.</li>
+            <li>An app that connects women with local eco-friendly businesses.</li>
+            <li>A tool to help women start green businesses or projects.</li>
+          </ul>
+        </div>
+
+        {/* Community Building */}
+        <div className="bg-secondary-500/10 p-4 rounded-lg shadow">
+          <h5 className="text-lg font-semibold text-text-900">Community Building</h5>
+          <p className="text-text-700">
+            Design a product that connects women with like-minded individuals or communities. 
+            </p>
+            <p className="text-text-700 mt-1">
+            <strong>Example projects:</strong>
+          </p>
+          <ul className="list-disc list-inside text-text-700 mt-2 space-y-1">
+            <li>A social platform for women entrepreneurs to collaborate.</li>
+            <li>A networking app for women in specific industries.</li>
+            <li>A local event finder for women’s empowerment workshops.</li>
+          </ul>
+        </div>
+      </div>
+
         
       {/* Submission Section */}
         <div>
@@ -245,7 +305,7 @@ export default function HackathonPage() {
         <div className="flex flex-col space-y-2">
           <FAQItem
             question="Who can join the hackathon?"
-            answer="Any high-school HK student passionate about women empowerment and tech is welcome! No matter your gender or school, you can submit your project to our hackathon!"
+            answer="Any high-school HK student passionate about women empowerment and tech is welcome!"
           />
           <FAQItem
             question="Do I need prior coding experience?"
@@ -269,16 +329,16 @@ export default function HackathonPage() {
             Ready to Hack?
           </h2>
           <h5 className="block text-2xl leading-6 tracking-wide text-text-800">
-            Sign up now for the First CodeHers Hackathon!
+            Submit your work for the hackathon <strong>now</strong>!
           </h5>
         </div>
         <div className="inline-flex rounded-md shadow">
           <Link
-            href="https://forms.gle/aPcWkbQxVxUh2GPj8"
+            href="https://forms.gle/oyNfxVrsFquozApS9"
             className="inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
             target="_blank"
           >
-            Sign Up
+            Submit Work
           </Link>
         </div>
       </div>
