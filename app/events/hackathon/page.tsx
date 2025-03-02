@@ -38,7 +38,7 @@ export default function HackathonPage() {
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
           {/* Submit Work Button */}
           <Link
-            href="/hackathon/submit"
+            href="https://forms.gle/oyNfxVrsFquozApS9"
             className="inline-flex items-center justify-center px-6 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500 hover:bg-primary-600 transition-all"
           >
             Submit Work
