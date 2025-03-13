@@ -1,9 +1,9 @@
-import { get2024WorkshopsData } from "@/app/components/GetWorkshopsData";
-import { get2024ScheduleData } from "@/app/components/GetScheduleData";
+import { get2025WorkshopsData } from "@/app/components/GetWorkshopsData";
+import { get2025ScheduleData } from "@/app/components/GetScheduleData";
 import Accordion from "@/app/components/Accordion";
 
 async function SessionSection({ session, index }: { session: any, index: any }) {
-  const workshops = get2024WorkshopsData();
+  const workshops = get2025WorkshopsData();
   // console.log(session);
   return (
     <div key={index} className="mt-8">
@@ -13,7 +13,7 @@ async function SessionSection({ session, index }: { session: any, index: any }) 
         {session["workshopIDs"].map((workshopId: any, index: any) => {
           let workshop = workshops[workshopId - 1];
           return (
-            <Accordion key={index} title={workshop.title} content={workshop.description} index={parseInt(workshop.id)} author={workshop.by} category={workshop.category} />
+            <Accordion key={index} title={workshop.title} content={workshop.description} index={parseInt(workshop.id)} author={workshop.by} category={workshop.category} location={workshop.location[index]} />
           );
         })}
       </div>
@@ -22,7 +22,7 @@ async function SessionSection({ session, index }: { session: any, index: any }) 
 }
 
 export default async function Workshops() {
-  const schedule = get2024ScheduleData();
+  const schedule = get2025ScheduleData();
 
   const scheduleSections = schedule.map((session: any, index: any) => {
     return (
@@ -33,7 +33,7 @@ export default async function Workshops() {
   return (
     <main className="flex flex-col px-6 md:px-16 lg:px-24 2xl:px-64 xl:px-48 py-10">
       <h2 className="text-4xl font-extrabold tracking-wide text-text-900 sm:text-5xl">
-        2024 Workshops
+        2025 Workshops
       </h2>
       <div className="mt-4">{scheduleSections}</div>
     </main>

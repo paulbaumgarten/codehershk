@@ -7,12 +7,14 @@ export default function Accordion({
   index,
   author,
   category,
+  location
 }: {
   title: string;
   content: string;
   index: number;
   author: string;
   category: string;
+  location: string;
 }) {
   const [active, setActive] = useState<number | null>(null);
   const handleToggle = (i: number) => {
@@ -57,7 +59,8 @@ export default function Accordion({
       >
         <div className="overflow-hidden">
           <p className="pb-3 text-justify">{content}</p>
-          <p className="font-medium italic text-secondary-300">By: {author}</p>
+          <p className="font-medium text-secondary-300"><strong>By:</strong> {author}</p>
+          {location == '' ? <p className="font-medium text-secondary-300"><strong>Room:</strong> {location}</p> : <></>}
         </div>
       </div>
     </div>
