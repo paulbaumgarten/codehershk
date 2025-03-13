@@ -13,7 +13,7 @@ async function SessionSection({ session, index }: { session: any, index: any }) 
         {session["workshopIDs"].map((workshopId: any, index: any) => {
           let workshop = workshops[workshopId - 1];
           return (
-            <Accordion key={index} title={workshop.title} content={workshop.description} index={parseInt(workshop.id)} author={workshop.by} category={workshop.category} />
+            <Accordion key={index} title={workshop.title} content={workshop.description} index={parseInt(workshop.id)} author={workshop.by} category={workshop.category} location={workshop.location[index]} />
           );
         })}
       </div>
