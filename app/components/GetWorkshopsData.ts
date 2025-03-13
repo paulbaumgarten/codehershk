@@ -134,7 +134,7 @@ export function get2024WorkshopsData () {
        },
        {
           "id": "17",
-          "title": "Gradient Descent in machine learning\n",
+          "title": "Gradient Descent in machine learning",
           "category": "No coding",
           "description": "In the ever-evolving field of machine learning, gradient descent remains a critical optimization algorithm that facilitates effective model training. This workshop aims to provide a fundamental understanding of the gradient descent algorithm and its practical applications in machine learning. Participants will gain valuable insights into the fundamentals of optimization and the role of gradient descent in minimizing loss functions. The workshop will highlight the utilization of a neural networks, specifically tailored for a natural language processing task, emphasizing its practical application.",
           "by": "Dr Dirk Schneiders (HKU)",
@@ -484,6 +484,14 @@ export function get2025WorkshopsData () {
           "description": "We will be introducing the basic concept of object-oriented programming in Java– such as relationships and objects. In addition to the core OOP concepts, we will also be including some helpful data structures to help with this style of programming, such as arrays and ArrayLists to help with organization and efficiency. You will learn to construct a basic program in which you can create objects form and have them interact with each other to carry out certain tasks or functions. Some prior knowledge of Java or other programming languages would be helpful in gaining a better understanding of syntax and logistics.",
           "by": "Mary Ji, Kirstine Au (ISF)",
           "location": ["", "", "Classroom 909 9/F", ""]
+       },
+       {
+          "id": "34",
+          "title": "Create an AI being and bring it to Earth (AI Being Studio)",
+          "category": "Beginner",
+          "description": "Dive into the world of AI creation! In this hands-on session, you’ll design and develop your own AI character using advanced tools and techniques. Explore natural language processing, personality design, and interactive storytelling to bring your digital creation to life. Perfect for beginners and enthusiasts alike, this workshop combines creativity and technology for an unforgettable experience.",
+          "by": "Jeanne Lim (beingAI)",
+          "location": ["Classroom 916 9/F", "", "", ""]
        },
     ]
   }
