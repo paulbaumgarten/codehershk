@@ -41,7 +41,6 @@ export default function CodeHers2025Page() {
 
               <Link
                 href="/events/2025/workshops"
-                target="_blank"
                 className="inline-flex items-center justify-center px-6 py-2 text-base font-medium leading-loose text-center bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-all"
               >
                 See Workshops

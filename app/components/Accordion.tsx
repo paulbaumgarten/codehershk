@@ -60,7 +60,7 @@ export default function Accordion({
         <div className="overflow-hidden">
           <p className="pb-3 text-justify">{content}</p>
           <p className="font-medium text-secondary-300"><strong>By:</strong> {author}</p>
-          {location == '' ? <p className="font-medium text-secondary-300"><strong>Room:</strong> {location}</p> : <></>}
+          {location != '' && <p className="font-medium text-secondary-300"><strong>Room:</strong> {location}</p>}
         </div>
       </div>
     </div>

@@ -10,10 +10,10 @@ async function SessionSection({ session, index }: { session: any, index: any }) 
       <h3 className="text-2xl font-extrabold text-text-900 sm:text-3xl">Session {index + 1}</h3>
       <h4 className="text-sm font-medium text-secondary-400 sm:text-lg">{session.time}</h4>
       <div className="mt-4 divide-y divide-text-100/50 divide-solid">
-        {session["workshopIDs"].map((workshopId: any, index: any) => {
+        {session["workshopIDs"].map((workshopId: any, indexWks: any) => {
           let workshop = workshops[workshopId - 1];
           return (
-            <Accordion key={index} title={workshop.title} content={workshop.description} index={parseInt(workshop.id)} author={workshop.by} category={workshop.category} location={workshop.location[index]} />
+            <Accordion key={indexWks} title={workshop.title} content={workshop.description} index={parseInt(workshop.id)} author={workshop.by} category={workshop.category} location={workshop.location[index]} />
           );
         })}
       </div>
