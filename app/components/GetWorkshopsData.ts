@@ -307,7 +307,7 @@ export function get2025WorkshopsData () {
           "category": "Beginner",
           "description": "Discover the fun of coding with our workshop! Learn to create colorful drawings and patterns using Python’s Turtle module. Perfect for beginners, this hands-on session combines creativity and programming to make learning Python engaging and interactive.",
           "by": "Joyce, Gloria, Yoyo, Adrianna, Claire (ISF)",
-          "location": ["Classroom 819 8/F", "", "", ""]
+          "location": ["Classroom 819 8/F", "", "Classroom 908 9/F", ""]
        },
        {
           "id": "12",
@@ -451,7 +451,7 @@ export function get2025WorkshopsData () {
           "category": "No coding",
           "description": "This workshop provides a structured overview of deep learning within the broader context of artificial intelligence. Students will leave with a foundational knowledge of the structure and mathematics behind neural networks, along with some applied situations. Participants will establish a solid grounding in the mathematical principles behind perceptrons (single neurons) and learn how data propagates through muti-layer neural networks. This will be aided with interactive examples to illustrate the mathematical concepts taught. Finally, discussions on loss functions, gradient descent, and backpropagation will showcase how neural networks adjust weights and biases to recognise patterns in data.",
           "by": "Anna Davies (Kellett)",
-          "location": ["", "", "Classroom 822B 8/F", ""]
+          "location": ["Classroom 824 8/F", "", "Classroom 822B 8/F", ""]
        },
        {
           "id": "30",
