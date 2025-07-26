@@ -34,7 +34,7 @@ This project is licensed under the MIT license. See our [LICENSE](LICENSE) for m
 
 ## Credits
 
-- [Valentina Banner](https://github.com/realhuman101) - *2024/25 Website Developer*
+- [Valentina Banner](https://github.com/bannev1) - *2024/25 Website Developer*
 - [Audrey Lai](https://github.com/audreylai) - *2023/24 Website Developer*
 
 ## Acknowledgments
