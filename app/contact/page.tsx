@@ -52,7 +52,7 @@ export default function ContactPage() {
 
   return (
     <main className="flex flex-col px-6 md:px-16 lg:px-24 2xl:px-64 xl:px-48 space-y-10">
-      {/* Title Section */}
+      Title Section
       <section className="pt-8">
         <h1 className="text-4xl font-extrabold tracking-wide text-text-900 sm:text-6xl mb-2">
           Contact Us
@@ -62,7 +62,7 @@ export default function ContactPage() {
         </p>
       </section>
 
-      {/* Form Section */}
+      {/* Form Section - currently nonfunctional
       <section className="p-6 bg-white rounded-xl shadow space-y-4">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -113,14 +113,15 @@ export default function ContactPage() {
             Send
           </button>
         </form>
-      </section>
+      </section> */}
 
-      {/* Additional Contact Info */}
+      {/* Contact Info */}
       <section className="space-y-2 pb-8">
         <p className="text-text-600">
-          Prefer email? Reach us at:{" "}
-          <a href="mailto:codehershk@gmail.com" className="text-primary-500 underline">
-            codehershk@gmail.com
+          {/* Prefer email? */}
+          Reach us at:{" "}
+          <a href="mailto:outreach@codehershk.org" className="text-primary-500 underline">
+            outreach@codehershk.org
           </a>
         </p>
         <p className="text-text-600">

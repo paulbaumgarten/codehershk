@@ -48,6 +48,12 @@ export default function EventArchivePage() {
       </section>
 
       {/* Archive Section */}
+
+      {/* <section className="p-6 bg-secondary-500/10 rounded-xl shadow space-y-4">
+         <h2 className="text-2xl font-bold text-text-900">Archive for 2025</h2>
+
+      </section> */}
+
       <section className="p-6 bg-secondary-500/10 rounded-xl shadow space-y-4">
         <h2 className="text-2xl font-bold text-text-900">Archive for 2024</h2>
         <p className="text-text-600 italic">Fun Fact: Our first event!</p>
