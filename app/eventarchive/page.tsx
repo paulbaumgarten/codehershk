@@ -120,9 +120,16 @@ export default function EventArchivePage() {
             View 2025 Workshops
           </Link>
 
+          <Link
+            href="/eventarchive/2025/hackathon"
+            className="px-4 py-2 bg-accent-500 text-white font-medium rounded-lg hover:bg-accent-600 transition-all"
+          >
+            View 2025 Hackathon
+          </Link>
+
             <Link
             href="https://www.youtube.com/watch?v=4yTva9Ncbrs"
-            className="px-4 py-2 bg-accent-500 text-white font-medium rounded-lg hover:bg-accent-600 transition-all"
+            className="px-4 py-2 bg-primary-500 text-white font-medium rounded-lg hover:bg-accent-600 transition-all"
           >
             Watch Event Trailer
           </Link>
@@ -222,7 +229,7 @@ export default function EventArchivePage() {
           
           <Link
             href="https://www.youtube.com/watch?v=zgT_fEx4XTk"
-            className="px-4 py-2 bg-accent-500 text-white font-medium rounded-lg hover:bg-accent-600 transition-all"
+            className="px-4 py-2 bg-primary-500 text-white font-medium rounded-lg hover:bg-accent-600 transition-all"
           >
             Watch Event Highlights
           </Link>
