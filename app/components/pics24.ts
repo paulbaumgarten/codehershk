@@ -4,11 +4,17 @@ const list = ['/event/audreySpeech.jpeg',
 	'/event/fullTeam.jpg',
 	'/event/fun.jpg',
 	'/event/gaming.jpg',
-	'/event/gaming2.jpg',
+	// '/event/gaming2.jpg',
 	'/event/hardworking.jpeg',
-	'/event/mainSpeech.jpeg',
+	// '/event/mainSpeech.jpeg',
 	'/event/panel.jpg',
-	'/event/workshop.jpeg']
+	// '/event/workshop.jpeg',
+	'event/pics25all/DSC00984.JPG',
+	'event/pics25all/Hackathon Winner Presentation.JPG',
+	'event/pics25all/Workshop 3.jpg',
+	'event/pics25all/Merch.jpg',
+	'event/pics25all/IMG_4645.jpg',
+]
 
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */

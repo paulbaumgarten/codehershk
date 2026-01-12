@@ -21,7 +21,42 @@ export default function Navbar() {
               className="w-auto h-10"
               alt="Code(H)ers logo"
             />
+            {/* <Image
+              src={"/mascot26/mascot1.png"}
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-auto h-10"
+              alt="Code(H)ers mascot 1"
+            />
+
+            
+                        <Image
+              src={"/mascot26/mascot2.png"}
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-auto h-10"
+              alt="Code(H)ers mascot 2"
+            />
+                        <Image
+              src={"/mascot26/mascot3.png"}
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-auto h-10"
+              alt="Code(H)ers mascot 3"
+            />
+                        <Image
+              src={"/mascot26/mascot4.png"}
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-auto h-10"
+              alt="Code(H)ers mascot 4"
+            /> */}
           </Link>
+          
           <button
             data-collapse-toggle="navbar-default"
             type="button"

@@ -63,7 +63,7 @@ function Countdown() {
     <div className="bg-transparent flex flex-col items-center justify-center p-6 md:p-8">
       <div className="text-center mb-6 md:mb-8">
                 <h1 className="block text-1xl font-extrabold tracking-wide text-center text-text-900 sm:text-5xl">
-Countdown To CodeHers 2026</h1>
+Time Until CodeHers 2026</h1>
         <p className="text-pink-400 text-base md:text-lg">March 7, 2026 • 9:30 AM HKT</p>
       </div>
       

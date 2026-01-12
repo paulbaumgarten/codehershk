@@ -6,18 +6,42 @@ export default function CurrentEventsPage() {
   return (
     <main className="flex flex-col px-6 md:px-16 lg:px-24 2xl:px-64 xl:px-48 space-y-10">
       <section className="pt-8">
-        <h1 className="text-4xl font-extrabold tracking-wide text-text-900 sm:text-6xl mb-2">
+          <h1 className="text-4xl font-extrabold tracking-wide text-text-900 sm:text-6xl">
           Current Events
         </h1>
+
         <p className="text-text-700 text-lg">
           Check out what we have going on right now!
         </p>
       </section>
 
-            {/* Countdown to event */}
-          <div>
-      <Countdown />
-    </div>
+
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+        {/* Mascot on the left */}
+            <div className="relative w-48 h-48 md:w-64 md:h-64">
+          <Image
+            src="/mascot26/mascot3.png" // Update with your actual mascot path
+            alt="CodeHers Mascot 3"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+        {/* Countdown in the middle */}
+        <Countdown/>
+
+        <div className="relative w-48 h-48 md:w-64 md:h-64">
+          <Image
+            src="/mascot26/mascot4.png" // Update with your actual mascot path
+            alt="CodeHers Mascot 4"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+        
+      </div>
+
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-6 bg-secondary-500/10 rounded-xl shadow space-y-2">
@@ -43,6 +67,7 @@ export default function CurrentEventsPage() {
               </Link>
             </div>
           </div>
+          
         </div>
 
         <div className="p-6 bg-secondary-500/10 rounded-xl shadow space-y-2">

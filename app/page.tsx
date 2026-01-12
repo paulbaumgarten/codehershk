@@ -37,7 +37,7 @@ export default function Home() {
             <div className="relative inline-flex items-center justify-center ease-out group">
               <div className="absolute duration-1000 transition-all opacity-70 -inset-px bg-primary-500 blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-300 animate-tilt"></div>
               <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSenBLL85ajsWR1DxIGWLyJPJD7_SYaCtRzrhOAVOqleVyIKFA/viewform"
+                href="https://app.codehershk.org"
                 className="relative top-0 inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:-top-2 transition-all"
                 target="_blank"
               >
@@ -92,7 +92,7 @@ export default function Home() {
                 Time & Date
               </h5>
               <p className="text-text-600 text-lg">
-                Saturday 15th March 2025 11:00am to 5:00pm
+                Saturday 7th March 2026, 9:30am - 4:30pm
               </p>
             </div>
             <div>
@@ -100,34 +100,42 @@ export default function Home() {
                 Venue
               </h5>
               <p className="text-text-600 text-lg">
-                Victoria Shanghai Academy, 19 Shum Wan Road
-                Aberdeen, Hong Kong
+                German Swiss International School <br />
+                11 Guildford Rd, The Peak, Hong Kong
               </p>
+            </div>
+             <div>
+              <h5 className="block text-xl font-medium leading-6 tracking-wide text-text-900">
+                Cost
+              </h5>
+              <p className="text-text-600 text-lg">Free! Includes free lunch and merchandise!</p>
             </div>
             <div>
               <h5 className="block text-xl font-medium leading-6 tracking-wide text-text-900">
                 Transit
               </h5>
               <p className="text-text-600 text-lg">
-                MTR Wong Chuk Hang Station Exit B
+                A bus shuttle from Admiralty MTR Station will be provided
               </p>
             </div>
             <div>
               <h5 className="block text-xl font-medium leading-6 tracking-wide text-text-900">
-                Cost
+                Who
               </h5>
               <p className="text-text-600 text-lg">
-                Free! Includes free lunch and merchandise!
+                Open to female or non-binary students from local and
+                international schools (Year 7 / Grade 6 / P6 and above)
               </p>
             </div>
           </div>
 
+
           {/* Promotional Video Replaces Google Maps Embed */}
           <div className="grow md:w-1/2 lg:w-1/3 flex flex-col justify-center h-72 md:h-auto">
-            <iframe
-              src="https://www.youtube.com/embed/4yTva9Ncbrs"
+          <iframe 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=rHXPWPP11J2mKIr6"
+            title="Promotional video" 
               className="w-full h-full md:h-2/3 lg:h-full rounded-xl"
-              title="Promotional Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />

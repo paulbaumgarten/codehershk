@@ -5,6 +5,8 @@ import { useState, ReactNode } from "react";
 import { useId } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import CountdownHack from "../../../components/countdownHack";
+import Image from "next/image";
+
 
 
 export default function HackathonPage() {
@@ -75,10 +77,23 @@ export default function HackathonPage() {
         <div className="flex-grow" />
       </div>
 
-    {/* Countdown to event */}
-          <div>
-      <CountdownHack />
-    </div>
+      {/* Countdown with Mascot */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+        {/* Mascot on the left */}
+        <div className="relative w-48 h-48 md:w-64 md:h-64">
+          <Image
+            src="mascot26/mascot1.png" // Update with your actual mascot path
+            alt="CodeHers Mascot 1"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+        
+        {/* Countdown in the middle */}
+        <CountdownHack />
+        
+      </div>
 
       {/* MAIN CONTENT SECTION */}
       <div
