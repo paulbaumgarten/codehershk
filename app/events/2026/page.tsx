@@ -143,7 +143,7 @@ export default function CodeHers2026Page() {
         <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg" style={{ paddingBottom: "56.25%" }}>
           <iframe
             src="https://www.youtube.com/embed/zgT_fEx4XTk"
-            title="CodeHers 2025 Highlights"
+            title="CodeHers 2024 Highlights"
             frameBorder="0"
             allowFullScreen
             className="absolute top-0 left-0 w-full h-full"

@@ -119,9 +119,16 @@ export default function ContactPage() {
       <section className="space-y-2 pb-8">
         <p className="text-text-600">
           {/* Prefer email? */}
-          Reach us at:{" "}
+          For general questions, reach us at:{" "}
           <a href="mailto:outreach@codehershk.org" className="text-primary-500 underline">
             outreach@codehershk.org
+          </a>
+        </p>
+        <p className="text-text-600">
+          {/* Prefer email? */}
+          For questions regarding the Hackathon, reach us at:{" "}
+          <a href="mailto:hackathon@codehershk.org" className="text-primary-500 underline">
+            hackathon@codehershk.org
           </a>
         </p>
         <p className="text-text-600">
