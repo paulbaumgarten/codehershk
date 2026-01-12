@@ -33,7 +33,7 @@ If you want to contribute to this project, please follow the guidelines below:
 This project is licensed under the MIT license. See our [LICENSE](LICENSE) for more information.
 
 ## Credits
-
+- [Ivy Sham](https://github.com/ivysham888) - *2025/26 Website Developer*
 - [Valentina Banner](https://github.com/bannev1) - *2024/25 Website Developer*
 - [Audrey Lai](https://github.com/audreylai) - *2023/24 Website Developer*
 
