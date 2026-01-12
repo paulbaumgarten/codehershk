@@ -27,7 +27,7 @@ export default function HackathonPage() {
                 Hers
               </span>
             </b>{" "}
-            Hackathon
+            Hackathon 2025
           </h1>
           <p className="text-text-700 text-lg">
             Got a brilliant idea that can help girls and women around the world?
