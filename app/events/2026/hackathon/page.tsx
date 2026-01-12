@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState, ReactNode } from "react";
 import { useId } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import CountdownHack from "../../../components/countdownHack";
+
 
 export default function HackathonPage() {
   // For timeline
@@ -49,6 +51,7 @@ export default function HackathonPage() {
             Submit Work
           </Link>
 
+
           {/* Hackathon Guide DOCS */}
           <Link
             href="https://docs.google.com/document/d/1M3P9ztEklNLIb1Hx3X-zBG9MWLHINw60f8J5DzoqTo0/edit?usp=sharing"
@@ -71,6 +74,11 @@ export default function HackathonPage() {
         {/* OPTIONAL: Put an image/graphic on the right */}
         <div className="flex-grow" />
       </div>
+
+    {/* Countdown to event */}
+          <div>
+      <CountdownHack />
+    </div>
 
       {/* MAIN CONTENT SECTION */}
       <div

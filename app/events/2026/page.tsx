@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import Countdown from "../../components/countdown";
 
 export default function CodeHers2026Page() {
   return (
     <main className="flex flex-col px-6 md:px-16 lg:px-24 2xl:px-64 xl:px-48">
+
       {/* 1) Hero Section */}
       <div className="flex flex-col-reverse pt-4 pb-10 lg:gap-8 gap-y-12 md:py-16 md:flex-row mb-10">
         <div className="flex flex-col space-y-6 lg:space-y-12">
@@ -60,6 +62,11 @@ export default function CodeHers2026Page() {
         </div>
       </div>
 
+      {/* Countdown to event */}
+          <div>
+      <Countdown />
+    </div>
+
       {/* 2) Event Details */}
       <div
         id="event-details"
@@ -96,6 +103,12 @@ export default function CodeHers2026Page() {
             </div>
             <div>
               <h5 className="block text-xl font-medium leading-6 tracking-wide text-text-900">
+                Transit
+              </h5>
+              <p className="text-text-600 text-lg">A bus shuttle from Admiralty MTR Station will be provided</p>
+            </div>
+            <div>
+              <h5 className="block text-xl font-medium leading-6 tracking-wide text-text-900">
                 Who
               </h5>
               <p className="text-text-600 text-lg">
@@ -114,6 +127,7 @@ export default function CodeHers2026Page() {
           </div>
         </div>
       </div>
+
 
       {/* 3) Highlights Video + PDF Links */}
       <section className="w-full py-10 mx-auto space-y-6 text-center lg:py-16">
@@ -144,18 +158,19 @@ export default function CodeHers2026Page() {
             Interested?
           </h2>
           <h5 className="block text-2xl leading-6 tracking-wide text-text-800">
-            Sign up for CodeHers 2025 now!
+            Sign up for CodeHers 2026 now!
           </h5>
         </div>
         <div className="inline-flex rounded-md shadow">
           <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSenBLL85ajsWR1DxIGWLyJPJD7_SYaCtRzrhOAVOqleVyIKFA/viewform"
+            href="https://app.codehershk.org"
             className="inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
             target="_blank"
           >
             Sign Up
           </Link>
         </div>
+
       </div>
     </main>
   );

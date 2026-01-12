@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Countdown from "../components/countdown";
 
 export default function CurrentEventsPage() {
   return (
@@ -12,6 +13,11 @@ export default function CurrentEventsPage() {
           Check out what we have going on right now!
         </p>
       </section>
+
+            {/* Countdown to event */}
+          <div>
+      <Countdown />
+    </div>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-6 bg-secondary-500/10 rounded-xl shadow space-y-2">
