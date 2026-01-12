@@ -82,7 +82,7 @@ export default function HackathonPage() {
         {/* Mascot on the left */}
         <div className="relative w-48 h-48 md:w-64 md:h-64">
           <Image
-            src="mascot26/mascot1.png" // Update with your actual mascot path
+            src="/mascot26/mascot1.png" // Update with your actual mascot path
             alt="CodeHers Mascot 1"
             fill
             className="object-contain"
