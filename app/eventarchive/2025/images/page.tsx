@@ -10,7 +10,7 @@ export default function AllImagesPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
 //   const [photos2024, setPhotos2024] = useState<Array<string>>(all(30));
-  const [photos2025, setPhotos2025] = useState<Array<string>>(all2(42));
+  const [photos2025, setPhotos2025] = useState<Array<string>>(all2(85));
   // Load all images dynamically
 
   // Open modal

@@ -13,7 +13,7 @@ export default function EventArchivePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
   const [photos2024, setPhotos2024] = useState<Array<string>>(all(30));
-  const [photos2025, setPhotos2025] = useState<Array<string>>(all2(100));
+  const [photos2025, setPhotos2025] = useState<Array<string>>(all2(85));
 
   // Open Modal with Selected Image
   const openModal = (image: string) => {
@@ -59,9 +59,9 @@ export default function EventArchivePage() {
       {/* 2025 Archive */}
       <section className="p-6 bg-secondary-500/10 rounded-xl shadow space-y-4">
         <h2 className="text-2xl font-bold text-text-900">Archive for 2025</h2>
-        {/* <p className="text-text-600 italic">Fun Fact: Our first event!</p> */}
+        <p className="text-text-600 italic">Fun Fact: The first event with XP and Hackathon!</p>
         <p className="text-text-700">
-          Participants: <strong>300</strong> &middot; Workshops: <strong>25</strong>
+          Participants: <strong>350+</strong> &middot; Workshops: <strong>40+</strong>
         </p>
 
         {/* 📸 Responsive Image Carousel */}
