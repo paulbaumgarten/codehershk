@@ -52,7 +52,7 @@ export default function ContactPage() {
 
   return (
     <main className="flex flex-col px-6 md:px-16 lg:px-24 2xl:px-64 xl:px-48 space-y-10">
-      Title Section
+      {/* Title Section */}
       <section className="pt-8">
         <h1 className="text-4xl font-extrabold tracking-wide text-text-900 sm:text-6xl mb-2">
           Contact Us

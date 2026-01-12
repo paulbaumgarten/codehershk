@@ -67,7 +67,7 @@ export default function Navbar() {
               </li>
               <li className="flex items-center h-full">
                 <Link
-                  href="/archive"
+                  href="/eventarchive"
                   className="block px-3 py-2 duration-150 ease-in rounded text-text-700 small:hover:text-text-400 small:p-0"
                 >
                   Event Archive
