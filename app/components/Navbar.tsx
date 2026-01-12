@@ -91,7 +91,7 @@ export default function Navbar() {
               </li>
               <li className="flex items-center h-full">
                 <Link
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSenBLL85ajsWR1DxIGWLyJPJD7_SYaCtRzrhOAVOqleVyIKFA/viewform"
+                  href="https://app.codehershk.org/"
                   className="inline-flex items-center justify-center px-5 py-1 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:opacity-70 transitiona-all"
                   target="_blank"
                 >
