@@ -6,7 +6,9 @@ import { InstagramEmbed } from 'react-social-media-embed';
 const ManualInstagramFeed = () => {
   // Array of Instagram post URLs
   const postUrls = [
-
+    "https://www.instagram.com/p/DHJEUmYTiSE/?img_index=1",
+    "https://www.instagram.com/p/DHJEZ5wzZIy/?img_index=1",
+    "https://www.instagram.com/p/DHJEeNsTgfI/?img_index=1",
     "https://www.instagram.com/p/DHTapt1zTYh/?img_index=1",
     "https://www.instagram.com/p/DHTbWGOTWxw/?img_index=1",
     "https://www.instagram.com/p/DHTbpI2zpf0/?img_index=1",

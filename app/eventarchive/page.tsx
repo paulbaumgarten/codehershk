@@ -128,7 +128,7 @@ export default function EventArchivePage() {
           </Link>
 
             <Link
-            href="/eventarchive/2025/instaembed25"
+            href="/eventarchive/2025/insta"
             className="px-4 py-2 bg-accent-500 text-white font-medium rounded-lg hover:bg-accent-600 transition-all"
           >
             See Instagram Posts

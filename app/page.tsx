@@ -8,6 +8,8 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { motion } from "framer-motion";
 import pics24 from "./components/pics24";
 import "@splidejs/react-splide/css";
+import Countdown from "../app/components/countdown";
+
 
 export default function Home() {
   return (
@@ -76,6 +78,32 @@ export default function Home() {
             ))}
           </Splide>
         </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+        {/* Mascot on the left */}
+            <div className="relative w-48 h-48 md:w-64 md:h-64">
+          <Image
+            src="/mascot26/mascot3.png" // Update with your actual mascot path
+            alt="CodeHers Mascot 3"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+        {/* Countdown in the middle */}
+        <Countdown/>
+
+        <div className="relative w-48 h-48 md:w-64 md:h-64">
+          <Image
+            src="/mascot26/mascot4.png" // Update with your actual mascot path
+            alt="CodeHers Mascot 4"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+        
       </div>
 
       <div
