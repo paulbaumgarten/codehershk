@@ -90,16 +90,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Additional Information */}
-        <div className="mt-12 text-center">
-          <div className="inline-block bg-white rounded-2xl shadow-lg p-6 border border-gray-100 max-w-2xl">
-            <h3 className="text-lg font-semibold text-gray-900 mb-3">📍 Our Location</h3>
-            <p className="text-gray-600 mb-4">
-              Based in the heart of innovation, we're always ready to connect with our community.
-            </p>
-            
-          </div>
-        </div>
+
       </div>
     </main>
   );
