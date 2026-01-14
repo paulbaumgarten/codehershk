@@ -150,7 +150,7 @@ export default function AboutPage() {
         <div className="flex flex-col space-y-2">
           <FAQItem
             question="Who can join CodeHers events?"
-            answer="Any high-school HK student identifying as female/non-binary is welcome! We do prioritize slots for that demographic."
+            answer="Any student in Hong Kong and nearby areas (in Y7/G6/P6 and above) identifying as female/non-binary is welcome! We do prioritize slots for that demographic."
           />
           <FAQItem
             question="Do I need prior coding experience?"
@@ -166,11 +166,11 @@ export default function AboutPage() {
           />
           <FAQItem
             question="What if I'm not in any of your partnering schools?"
-            answer="That's perfectly fine! Signups are open to any Hong Kong student from any school!"
+            answer="That's perfectly fine! Signups are open to any eligible student (female or non-binary in Y7/G6/P6 and above) in Hong Kong and nearby areas from any school!"
           />
           <FAQItem
             question="What are the prerequisites to attending your event?"
-            answer="As long as you have a laptop with WiFi access and are a high-school student in Hong Kong, you can attend our event! No knowledge or other prerequisites are required."
+            answer="As long as you have a laptop with WiFi access and are an eligible student (female or non-binary in Y7/G6/P6 and above), you can attend our event! No knowledge or other prerequisites are required."
           />
           <FAQItem
             question="I want to help support your event as a student, how can I help?"

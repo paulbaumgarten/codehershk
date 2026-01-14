@@ -161,7 +161,7 @@ export default function Home() {
           {/* Promotional Video Replaces Google Maps Embed */}
           <div className="grow md:w-1/2 lg:w-1/3 flex flex-col justify-center h-72 md:h-auto">
           <iframe 
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=rHXPWPP11J2mKIr6"
+            src="https://www.youtube.com/embed/4yTva9Ncbrs?si=2El9M9LyRe_G-rYP"
             title="Promotional video" 
               className="w-full h-full md:h-2/3 lg:h-full rounded-xl"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
