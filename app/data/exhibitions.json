@@ -1,9 +1,0 @@
-{ "exhibitions": [
-  {
-    "id": 1,
-    "title": "example title",
-    "description": "example description",
-    "presenter": "john doe",
-    "organisation": "john doe tycoon"
-  }
-] }
