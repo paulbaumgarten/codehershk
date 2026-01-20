@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "type": "module",
   "private": true,
-  "homepage": "https://codehers.org",
+  "homepage": "https://codehershk.org",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
