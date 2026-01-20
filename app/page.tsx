@@ -173,25 +173,27 @@ export default function Home() {
 
       <WorkshopsSection />
 
-      <div className="items-center py-10 space-y-12 md:py-16">
-      <div className="flex flex-col space-y-4">
-        <h2 className="text-4xl font-extrabold tracking-wide text-center text-text-900 sm:text-6xl">
+        <div className="w-full py-10 mx-auto space-y-8 text-center lg:py-16">
+        <div className="flex flex-col space-y-4">
+                 <h2 className="text-4xl font-extrabold tracking-wide text-center text-text-900 sm:text-6xl">
           Hackathon
         </h2>
         <h5 className="block text-2xl leading-6 tracking-wide text-center text-text-800">
-          Join the 2026 Hackathon for a chance to showcase your talents and passions in STEM and bring your ideas to life! Put your coding chops to the test!
+          Join the 2026 Hackathon for a chance to showcase your talents and passions in STEM and bring your ideas to life!
         </h5>
+        </div>
         <div className="inline-flex rounded-md shadow">
           <Link
             href="https://codehershk.org/events/2026/hackathon"
-            className="inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
+            className="inline-flex items-center justify-center w-full px-8 py-2 text-base leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
             target="_blank"
           >
-            Learn more
+            Learn More
           </Link>
         </div>
       </div>
-    </div>
+
+
 
       <SchoolCredits />
 
