@@ -13,7 +13,7 @@ function CountdownHack() {
   
   const calculateTimeLeft = () => {
     const now = new Date();
-    const difference = targetDate.getDate() - now.getDate();
+    const difference = targetDate.getTime() - now.getTime();
     
     if (difference <= 0) {
       return { days: 0, hours: 0, minutes: 0, seconds: 0, expired: true };

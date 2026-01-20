@@ -173,6 +173,26 @@ export default function Home() {
 
       <WorkshopsSection />
 
+      <div className="items-center py-10 space-y-12 md:py-16">
+      <div className="flex flex-col space-y-4">
+        <h2 className="text-4xl font-extrabold tracking-wide text-center text-text-900 sm:text-6xl">
+          Hackathon
+        </h2>
+        <h5 className="block text-2xl leading-6 tracking-wide text-center text-text-800">
+          Join the 2026 Hackathon for a chance to showcase your talents and passions in STEM and bring your ideas to life! Put your coding chops to the test!
+        </h5>
+        <div className="inline-flex rounded-md shadow">
+          <Link
+            href="https://codehershk.org/events/2026/hackathon"
+            className="inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
+            target="_blank"
+          >
+            Learn more
+          </Link>
+        </div>
+      </div>
+    </div>
+
       <SchoolCredits />
 
       <div className="w-full py-10 mx-auto space-y-8 text-center lg:py-16">
@@ -181,12 +201,12 @@ export default function Home() {
             Interested?
           </h2>
           <h5 className="block text-2xl leading-6 tracking-wide text-text-800">
-            Sign up for the 2025 event now!
+            Sign up for the 2026 event now!
           </h5>
         </div>
         <div className="inline-flex rounded-md shadow">
           <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSenBLL85ajsWR1DxIGWLyJPJD7_SYaCtRzrhOAVOqleVyIKFA/viewform"
+            href="https://app.codehershk.org/"
             className="inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
             target="_blank"
           >
