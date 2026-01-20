@@ -1,0 +1,22 @@
+.customCursor {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #afd8bd;
+    pointer-events: none;
+    z-index: 99999; 
+    transform: translate(-50%, -50%); 
+    transition: width 0.2s, height 0.2s;
+}
+
+.customCursor.smaller {
+    width: 15px;
+    height: 15px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .customCursor {
+        display: none;
+    }
+}
