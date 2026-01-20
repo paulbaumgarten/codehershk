@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
