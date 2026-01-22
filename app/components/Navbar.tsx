@@ -124,9 +124,20 @@ export default function Navbar() {
                   Contact Us
                 </Link>
               </li>
-              <li className="flex items-center h-full">
+
+                <li className="flex items-center h-full">
                 <Link
                   href="https://app.codehershk.org/"
+                  className="inline-flex items-center justify-center px-5 py-1 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:opacity-70 transitiona-all"
+                  target="_blank"
+                >
+                  Participant Dashboard
+                </Link>
+              </li>
+
+              <li className="flex items-center h-full">
+                <Link
+                  href="https://app.codehershk.org/register"
                   className="inline-flex items-center justify-center px-5 py-1 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:opacity-70 transitiona-all"
                   target="_blank"
                 >

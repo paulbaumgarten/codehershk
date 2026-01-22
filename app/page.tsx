@@ -39,7 +39,7 @@ export default function Home() {
             <div className="relative inline-flex items-center justify-center ease-out group">
               <div className="absolute duration-1000 transition-all opacity-70 -inset-px bg-primary-500 blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-300 animate-tilt"></div>
               <Link
-                href="https://app.codehershk.org"
+                href="https://app.codehershk.org/register"
                 className="relative top-0 inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:-top-2 transition-all"
                 target="_blank"
               >
@@ -208,7 +208,7 @@ export default function Home() {
         </div>
         <div className="inline-flex rounded-md shadow">
           <Link
-            href="https://app.codehershk.org/"
+            href="https://app.codehershk.org/register"
             className="inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
             target="_blank"
           >
