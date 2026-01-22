@@ -30,7 +30,7 @@ export default function Accordion({
         >
           <span>
             {title}{" "}
-            <span className={`px-2 text-xs rounded-full ${category=="Intermediate" && 'text-blue-600 bg-blue-200'} ${category=="Beginner" && 'text-emerald-600 bg-emerald-200'} ${category=="No coding" && 'text-zinc-600 bg-zinc-200'} `}>
+            <span className={`px-2 text-xs rounded-full ${category=="Intermediate" && 'text-blue-600 bg-blue-200'} ${category=="Advanced" && 'text-purple-600 bg-purple-200'} ${category=="Beginner" && 'text-emerald-600 bg-emerald-200'} ${category=="No coding" && 'text-zinc-600 bg-zinc-200'} `}>
               {category}
             </span>
           </span>

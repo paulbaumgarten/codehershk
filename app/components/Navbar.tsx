@@ -133,6 +133,7 @@ export default function Navbar() {
                   Sign Up
                 </Link>
               </li>
+
             </ul>
           </div>
         </div>

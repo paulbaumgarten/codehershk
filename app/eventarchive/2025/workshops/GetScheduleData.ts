@@ -43,3 +43,20 @@ export function get2025ScheduleData () {
 
   return scheduleData["sessions"];
 }
+
+export function get2026ScheduleData () {
+  const scheduleData = {
+    "sessions": [
+      {
+         "time": "11:10 - 12:10",
+         "workshopIDs": ["1", "2", "3", "4", "5", "6", "7", "8"]
+      },
+      {
+         "time": "14:10 - 15:10",
+         "workshopIDs": ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
+      },
+   ]
+  }
+
+  return scheduleData["sessions"];
+}
