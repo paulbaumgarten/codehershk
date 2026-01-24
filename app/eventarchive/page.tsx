@@ -233,6 +233,13 @@ export default function EventArchivePage() {
           >
             View 2024 Workshops
           </Link>
+
+          <Link
+            href="/eventarchive/2024/insta"
+            className="px-4 py-2 bg-accent-500 text-white font-medium rounded-lg hover:bg-accent-600 transition-all"
+          >
+            See Instagram Posts
+          </Link> 
           
           <Link
             href="https://www.youtube.com/watch?v=zgT_fEx4XTk"
