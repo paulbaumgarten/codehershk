@@ -236,7 +236,6 @@ export default function HackathonPage() {
           <p className="text-text-700 mb-4">
             This year, registration and submission of projects for the hackathon will be simulatenous in 1 form! 
             Submissions are expected to include a 1500-character project proposal and a 5-minute long video with narration to both demonstrate your project and show off your presentation. 
-            In addition, partipicants are <strong>strongly encouraged</strong> to submit a prototype. 
             </p>
            <p className="text-text-700 mb-4">
             In addition, partipicants are <strong>strongly encouraged</strong> to submit a prototype. 

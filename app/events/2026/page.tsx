@@ -107,7 +107,7 @@ export default function CodeHers2026Page() {
               </h5>
               <p className="text-text-600 text-lg">
                 German Swiss International School <br />
-                11 Guildford Rd, The Peak, Hong Kong
+                22 Guildford Rd, The Peak, Hong Kong
               </p>
             </div>
             <div>
@@ -135,10 +135,11 @@ export default function CodeHers2026Page() {
           {/* Right column: Google Map */}
           <div className="grow md:w-1/2 lg:w-1/3 flex flex-col justify-center h-72 md:h-auto">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d964.00767040156!2d114.16077111110263!3d22.265592348925335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400134a28fa6b%3A0x6d1e162754bea749!2sGerman%20Swiss%20International%20School!5e0!3m2!1sen!2shk!4v1768204734880!5m2!1sen!2shk" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.3303479485435!2d114.15811397545195!3d22.265472779711693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404001349701291%3A0xce282525fd6674a8!2sGerman%20Swiss%20International%20School%20(The%20Peak%20Campus)%20Lower%20Building%2C%2022%20Guildford%20Rd%2C%20The%20Peak!5e0!3m2!1sen!2shk!4v1769348953311!5m2!1sen!2shk"
               className="w-full h-full md:h-2/3 lg:h-full rounded-xl"
               loading="lazy"
             ></iframe>
+
           </div>
         </div>
       </div>

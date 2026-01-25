@@ -129,7 +129,7 @@ export default function Home() {
               </h5>
               <p className="text-text-600 text-lg">
                 German Swiss International School <br />
-                11 Guildford Rd, The Peak, Hong Kong
+                22 Guildford Rd, The Peak, Hong Kong
               </p>
             </div>
              <div>
