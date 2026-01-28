@@ -56,6 +56,15 @@ export default function CurrentEventsPage() {
             >
               Learn More
             </Link>
+
+          <Link
+            href="/marketing/2026poster.pdf"
+            target="_blank"
+            className="inline-block px-4 py-2 text-base font-medium leading-loose text-white rounded-lg bg-accent-500 hover:bg-accent-600 transition-all"
+          >
+            View Poster
+          </Link>
+
             <div className="relative inline-flex items-center justify-center ease-out group">
               <div className="absolute duration-1000 transition-all opacity-70 -inset-px bg-primary-500 blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-300 animate-tilt"></div>
               <Link
@@ -107,7 +116,7 @@ export default function CurrentEventsPage() {
         <div className="relative w-full overflow-hidden rounded-lg" style={{ paddingBottom: "56.25%" }}>
           <iframe
             src="https://www.youtube.com/embed/zgT_fEx4XTk"
-            title="CodeHers Highlights 2025"
+            title="CodeHers Highlights 2024"
             frameBorder="0"
             allowFullScreen
             className="absolute top-0 left-0 w-full h-full"
@@ -116,7 +125,7 @@ export default function CurrentEventsPage() {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
-            href="/marketing/2025poster.pdf"
+            href="/marketing/2026poster.pdf"
             target="_blank"
             className="inline-block px-4 py-2 text-base font-medium leading-loose text-white rounded-lg bg-accent-500 hover:bg-accent-600 transition-all"
           >
@@ -124,7 +133,6 @@ export default function CurrentEventsPage() {
           </Link>
           <Link
             href="/about/school-introduction/"
-            target="_blank"
             className="inline-block px-4 py-2 text-base font-medium leading-loose text-white rounded-lg bg-accent-500 hover:bg-accent-600 transition-all"
           >
             Introduction to Schools

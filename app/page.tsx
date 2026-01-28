@@ -161,7 +161,7 @@ export default function Home() {
           {/* Promotional Video Replaces Google Maps Embed */}
           <div className="grow md:w-1/2 lg:w-1/3 flex flex-col justify-center h-72 md:h-auto">
           <iframe 
-            src="https://www.youtube.com/embed/4yTva9Ncbrs?si=2El9M9LyRe_G-rYP"
+            src="https://www.youtube.com/embed/LUiZK3s67bg?si=4oX9PhFbWjMlQlOW"
             title="Promotional video" 
               className="w-full h-full md:h-2/3 lg:h-full rounded-xl"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -186,7 +186,6 @@ export default function Home() {
           <Link
             href="https://codehershk.org/events/2026/hackathon"
             className="inline-flex items-center justify-center w-full px-8 py-2 text-base leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
-            target="_blank"
           >
             Learn More
           </Link>

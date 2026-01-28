@@ -49,6 +49,7 @@ export default function HackathonPage() {
           <Link
             href="https://forms.gle/mJV9tqRHKPaEhtS38"
             className="inline-flex items-center justify-center px-6 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500 hover:bg-primary-600 transition-all"
+            target="_blank"
           >
             Submit Work
           </Link>
@@ -56,7 +57,7 @@ export default function HackathonPage() {
 
           {/* Hackathon Guide DOCS */}
           <Link
-            href="https://docs.google.com/document/d/1M3P9ztEklNLIb1Hx3X-zBG9MWLHINw60f8J5DzoqTo0/edit?usp=sharing"
+            href="/hackathon/2026HackathonGuide.pdf"
             target="_blank"
             className="inline-flex items-center justify-center px-6 py-2 text-base font-medium leading-loose text-center bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-all"
           >

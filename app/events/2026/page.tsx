@@ -49,6 +49,14 @@ export default function CodeHers2026Page() {
               </Link>
 
               <Link
+            href="/marketing/2026poster.pdf"
+            target="_blank"
+            className="inline-flex items-center justify-center px-6 py-2 text-base font-medium leading-loose text-center bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-all"
+          >
+            View Poster
+          </Link>
+
+              <Link
                 href="/events"
                 className="relative top-0 inline-flex items-center justify-center px-8 py-2 text-base font-medium leading-loose text-center duration-300 ease-out rounded-lg hover:-top-2 transition-all bg-secondary-100 text-text-700"
               >
@@ -148,18 +156,17 @@ export default function CodeHers2026Page() {
       {/* 3) Highlights Video + PDF Links */}
       <section className="w-full py-10 mx-auto space-y-6 text-center lg:py-16">
         <h2 className="block text-4xl font-extrabold tracking-wide text-text-900 sm:text-5xl">
-          CodeHers Highlights
+          CodeHers 2026 Trailer
         </h2>
         <p className="text-text-700 text-lg max-w-2xl mx-auto">
-          Watch our highlights video from past events, and check out our 
-          promotional files for more info.
+          Watch our trailer video for this year - check out the exciting things on offer in this year's event!
         </p>
 
         {/* YouTube Embed (16:9 ratio) */}
         <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg" style={{ paddingBottom: "56.25%" }}>
           <iframe
-            src="https://www.youtube.com/embed/zgT_fEx4XTk"
-            title="CodeHers 2024 Highlights"
+            src="https://www.youtube.com/embed/LUiZK3s67bg?si=4oX9PhFbWjMlQlOW"
+            title="CodeHers 2026 Trailer"
             frameBorder="0"
             allowFullScreen
             className="absolute top-0 left-0 w-full h-full"

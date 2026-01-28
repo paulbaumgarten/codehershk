@@ -165,7 +165,7 @@ export default function CodeHers2026Page() {
         </div>
         <div className="inline-flex rounded-md shadow">
           <Link
-            href="https://app.codehershk.org"
+            href="https://app.codehershk.org/register"
             className="inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
             target="_blank"
           >

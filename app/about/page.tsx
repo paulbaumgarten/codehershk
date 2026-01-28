@@ -8,53 +8,34 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 
-import StudentPics from "../components/StudentPics";
+const Team2026 = [
+  "/team/students26/CIS26.png",
+  "/team/students26/GSIS26.png",
+  "/team/students26/HARROW26.png",
+  "/team/students26/HKIS26.png",
+  "/team/students26/ISF26.png",
+  "/team/students26/KELLETT26.png",
+  "/team/students26/KGV26.png",
+  "/team/students26/SIS26.png",
+  "/team/students26/STC26.png",
+  "/team/students26/VSA26.png",
+  "/team/students26/WIS26.png",
 
-/** Flip-card component using Framer Motion. */
-function FlipCard({ front, back }: { front: string; back: string }) {
-  const [flipped, setFlipped] = useState(false);
+];
 
-  const handleMouseEnter = () => setFlipped(true);
-  const handleMouseLeave = () => setFlipped(false);
-  const handleClick = () => setFlipped(!flipped);
-
+// Simple Photo Card Component
+function PhotoCard({ imageUrl, alt = "CodeHers Team" }: { imageUrl: string; alt?: string }) {
   return (
-    <div
-      className="flex items-center justify-center p-4 bg-white rounded-lg shadow w-[260px] h-[260px] cursor-pointer"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onClick={handleClick}
-    >
-      <motion.div
-        className="relative w-[260px] h-[260px]"
-        style={{ perspective: 1000 }}
-      >
-        <motion.div
-          className="relative w-full h-full"
-          animate={{ rotateY: flipped ? 180 : 0 }}
-          transition={{ duration: 0.5 }}
-          style={{ transformStyle: "preserve-3d" }}
-        >
-          {/* FRONT */}
-          <motion.div
-            className="absolute w-full h-full rounded-md"
-            style={{ backfaceVisibility: "hidden" }}
-          >
-            <Image src={front} alt="Front" fill className="object-contain" />
-          </motion.div>
-
-          {/* BACK */}
-          <motion.div
-            className="absolute w-full h-full rounded-md"
-            style={{
-              transform: "rotateY(180deg)",
-              backfaceVisibility: "hidden",
-            }}
-          >
-            <Image src={back} alt="Back" fill className="object-contain" />
-          </motion.div>
-        </motion.div>
-      </motion.div>
+    <div className="flex items-center justify-center p-2 bg-white rounded-lg shadow w-[280px] h-[280px] overflow-hidden">
+      <div className="relative w-full h-full">
+        <Image 
+          src={imageUrl} 
+          alt={alt} 
+          fill 
+          className="object-cover rounded-md"
+          sizes="(max-width: 280px) 100vw, 280px"
+        />
+      </div>
     </div>
   );
 }
@@ -75,43 +56,89 @@ export default function AboutPage() {
       </section>
 
       {/* Our Team Section: side-by-side on md+ screens */}
-      <section className="bg-secondary-500/10 p-6 rounded-xl shadow flex flex-col md:flex-row gap-3 items-start">
+      <section className="bg-secondary-500/10 p-6 rounded-xl shadow flex flex-col md:flex-row gap-6 items-start">
         {/* Left side text */}
         <div className="md:w-3/5 space-y-4">
           <h2 className="text-2xl font-bold text-text-800">Our Team</h2>
           <p className="text-text-600">
-            We’re a collective of passionate students from various schools across Hong Kong. Our team brings a wide range of
+            We're a collective of passionate students from various schools across Hong Kong. Our team brings a wide range of
             talents—from web dev to AI—to create events that spark curiosity
             and empower more girls to explore coding.
           </p>
           <p className="text-text-600">
-            Scroll through our carousel to see the faces behind CodeHers! Hover
-            (or tap on mobile) to flip each card and reveal the back side.
+            Scroll through our carousel to see the faces behind CodeHers this year!
           </p>
+
+          <div className="flex flex-wrap items-center justify-between w-full px-5 py-1 mx-auto small:px-33 gap-3">
+            <Link
+              href="/about/2026"
+              className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:opacity-70 transition-all"
+            >
+              2026 Team
+            </Link>
+            
+            <Link
+              href="/about/2025"
+              className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:opacity-70 transition-all"
+            >
+              2025 Team
+            </Link>
+
+            <Link
+              href="/about/2024"
+              className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-loose text-center text-white duration-300 rounded-lg bg-primary-500 hover:opacity-70 transition-all"
+            >
+              2024 Team
+            </Link>
+          </div>
         </div>
 
-        {/* Right side: smaller max width so it's not huge */}
-        <div className="w-[260px] rounded-lg m-auto md:m-0 md:ml-auto overflow-hidden">
-          <Splide
-            options={{
-              type: "loop",
-              autoplay: true,
-              interval: 3000,
-              arrows: true,
-              pagination: false,
-              speed: 900,
-              gap: "10px"
-            }}
-            className="overflow-hidden"
-          >
-            {StudentPics.map((pic, idx) => (
-              <SplideSlide key={idx} className="w-fit">
-                <FlipCard front={pic.front} back={pic.back} />
-              </SplideSlide>
-            ))}
-          </Splide>
+        {/* Right side: Photo Carousel */}
+<div className="w-full md:w-[300px] rounded-lg m-auto md:m-0 md:ml-auto overflow-hidden">
+  <Splide
+    options={{
+      type: "loop",
+      arrows: true,
+      pagination: false,
+      speed: 1000, // Transition speed between slides
+      gap: "16px",
+      perPage: 1,
+      perMove: 1,
+      height: '400px',
+      autoplay: true, // Enable autoplay
+      interval: 2000, // Wait 5 seconds between slides
+      pauseOnHover: true, // Pause on hover
+      pauseOnFocus: true, // Pause when focused
+      rewind: false, // Don't rewind, just go to next
+      breakpoints: {
+        640: {
+          perPage: 1,
+          height: '380px',
+          interval: 5000, // Same 5 seconds on mobile
+        }
+      }
+    }}
+    className="overflow-visible h-full"
+  >
+    {Team2026.map((imageUrl, idx) => (
+      <SplideSlide key={idx} className="flex justify-center h-full">
+        <div className="flex items-center justify-center p-2 bg-white rounded-lg shadow w-[280px] h-[400px] overflow-hidden">
+          <div className="relative w-full h-full">
+            <Image 
+              src={imageUrl} 
+              alt={`CodeHers Team Photo ${idx + 1}`} 
+              fill 
+              className="object-cover rounded-md"
+              sizes="(max-width: 280px) 100vw, 280px"
+            />
+          </div>
         </div>
-      </section>
+      </SplideSlide>
+    ))}
+  </Splide>
+</div>
+
+</section>
 
       {/* Vision / Mission / Values */}
       <section className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -201,7 +228,7 @@ export default function AboutPage() {
           Any other questions?
         </h2>
         <p className="text-text-700 mb-4">
-          We’re more than happy to help you out!
+          We're more than happy to help you out!
         </p>
         <Link
           href="/contact"
@@ -243,3 +270,91 @@ function FAQItem({ question, answer }: { question: string; answer: ReactNode }) 
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /** Flip-card component using Framer Motion. */
+// function FlipCard({ front, back }: { front: string; back: string }) {
+//   const [flipped, setFlipped] = useState(false);
+
+//   const handleMouseEnter = () => setFlipped(true);
+//   const handleMouseLeave = () => setFlipped(false);
+//   const handleClick = () => setFlipped(!flipped);
+
+//   return (
+//     <div
+//       className="flex items-center justify-center p-4 bg-white rounded-lg shadow w-[260px] h-[260px] cursor-pointer"
+//       onMouseEnter={handleMouseEnter}
+//       onMouseLeave={handleMouseLeave}
+//       onClick={handleClick}
+//     >
+//       <motion.div
+//         className="relative w-[260px] h-[260px]"
+//         style={{ perspective: 1000 }}
+//       >
+//         <motion.div
+//           className="relative w-full h-full"
+//           animate={{ rotateY: flipped ? 180 : 0 }}
+//           transition={{ duration: 0.5 }}
+//           style={{ transformStyle: "preserve-3d" }}
+//         >
+//           {/* FRONT */}
+//           <motion.div
+//             className="absolute w-full h-full rounded-md"
+//             style={{ backfaceVisibility: "hidden" }}
+//           >
+//             <Image src={front} alt="Front" fill className="object-contain" />
+//           </motion.div>
+
+//           {/* BACK */}
+//           <motion.div
+//             className="absolute w-full h-full rounded-md"
+//             style={{
+//               transform: "rotateY(180deg)",
+//               backfaceVisibility: "hidden",
+//             }}
+//           >
+//             <Image src={back} alt="Back" fill className="object-contain" />
+//           </motion.div>
+//         </motion.div>
+//       </motion.div>
+//     </div>
+//   );
+// }
+
+
+        // {/* Right side: smaller max width so it's not huge */}
+        // <div className="w-[260px] rounded-lg m-auto md:m-0 md:ml-auto overflow-hidden">
+        //   <Splide
+        //     options={{
+        //       type: "loop",
+        //       autoplay: true,
+        //       interval: 3000,
+        //       arrows: true,
+        //       pagination: false,
+        //       speed: 900,
+        //       gap: "10px"
+        //     }}
+        //     className="overflow-hidden"
+        //   >
+        //     {StudentPics.map((pic, idx) => (
+        //       <SplideSlide key={idx} className="w-fit">
+        //         <FlipCard front={pic.front} back={pic.back} />
+        //       </SplideSlide>
+        //     ))}
+        //   </Splide>
+        // </div>
+

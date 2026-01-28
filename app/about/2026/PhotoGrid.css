@@ -1,0 +1,99 @@
+/* PhotoGrid.css - Simple version without text/links */
+
+.photo-grid-container {
+  background: transparent;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.photo-grid {
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.photo-item-wrapper {
+  background: transparent;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.photo-item-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.photo-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background: transparent;
+  aspect-ratio: 1080 / 1350; /* 4:5 ratio - 1080x1350 */
+  height: auto !important; /* Override the inline height */
+}
+
+.photo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.photo-item-wrapper:hover .photo-image {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .photo-item {
+    height: auto !important;
+    aspect-ratio: 1080 / 1350; /* Maintain 4:5 ratio on mobile */
+  }
+}
+
+/* Optional: Add subtle shadow on hover */
+.photo-item {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.photo-item-wrapper:hover .photo-item {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* For specific sizing control */
+.photo-grid.tall-grid .photo-item {
+  aspect-ratio: 1080 / 1350; /* Explicitly set 4:5 ratio */
+}
+
+/* If you want to control max dimensions */
+.photo-grid-container .photo-grid {
+  max-width: 1080px; /* Maximum width of the grid */
+}
+
+.photo-item {
+  max-height: 1350px; /* Maximum height of each item */
+}
