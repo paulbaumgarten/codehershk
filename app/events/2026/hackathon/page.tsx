@@ -351,7 +351,7 @@ The top five teams (in the preliminary round) will present live to the judges on
         </div>
         <div className="inline-flex rounded-md shadow">
           <Link
-            href="https://docs.google.com/document/d/1M3P9ztEklNLIb1Hx3X-zBG9MWLHINw60f8J5DzoqTo0/edit?usp=sharing"
+            href="/hackathon/2026HackathonGuide.pdf"
             className="inline-flex items-center justify-center w-full px-8 py-2 text-base font-medium leading-loose text-center text-white rounded-lg bg-primary-500 bg-gradient-to-r from-primary-500 to-accent-500"
             target="_blank"
           >
