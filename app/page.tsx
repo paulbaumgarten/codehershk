@@ -224,14 +224,14 @@ function SchoolCredits() {
     { src: "/school-logos/CIS on white.jpeg", href: "https://www.cis.edu.hk/" },
     { src: "/school-logos/GSIS.png", href: "https://www.gsis.edu.hk/en/" },
     { src: "/school-logos/HKIS.png", href: "https://www.hkis.edu.hk/" },
-    { src: "/school-logos/Harrow on white.jpg", href: "https://www.harrowhongkong.hk/" },
+    { src: "/school-logos/Harrow on white.jpg", href: "https://www.harrowhongkong.hk/his/" },
     { src: "/school-logos/ISF.png", href: "https://academy.isf.edu.hk/" },
-    { src: "/school-logos/KGV ESF version.png", href: "https://www.kgv.edu.hk/" },
+    { src: "/school-logos/KGV ESF version.png", href: "https://kgv.esf.edu.hk/en/"},
     { src: "/school-logos/Kellett on white.jpg", href: "https://www.kellettschool.com/" },
-    { src: "/school-logos/SIS-ESF-version.png", href: "https://www.sis.edu.hk/" },
-    { src: "/school-logos/STC on transparent.png", href: "https://shatincollege.edu.hk/" },
+    { src: "/school-logos/SIS-ESF-version.png", href: "https://sis.esf.edu.hk/" },
+    { src: "/school-logos/STC on transparent.png", href: "https://shatincollege.esf.edu.hk/" },
     { src: "/school-logos/VSA.jpeg", href: "https://www.vsa.edu.hk/" },
-    { src: "/school-logos/WIS esf.png", href: "https://www.wis.edu.hk/" },
+    { src: "/school-logos/WIS esf.png", href: "https://sis.esf.edu.hk/" },
   ];
 
   return (
