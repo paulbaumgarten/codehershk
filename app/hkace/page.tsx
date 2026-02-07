@@ -11,7 +11,7 @@ export default function RedirectToMain() {
     const trackAndRedirect = async () => {
       try {
         await fetch('https://app.codehershk.org/hkace', {
-          method: 'GET',
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
