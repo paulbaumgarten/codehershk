@@ -503,162 +503,220 @@ export function get2026WorkshopsData () {
 
   const workshopData = {
     "workshops": [
+
        {
           "id": "1",
-          "title": "Pyladies",
-          "category": "",
-          "description": "N/A",
-          "by": "N/A",
+          "title": "How to build AI Literacy",
+          "category": "Beginner",
+          "description": "A hands-on introduction to Using Sensors, Collecting Data, and Developing Computer Science Fundamentals.Learn how to program and use the AI Vision sensor in the VEX AIM robot to perceive the real world.",
+          "by": "VEX",
           "location": []
        },
 
       {
           "id": "2",
-          "title": "VEX and Lego",
+          "title": "Data Apps Made Easy: An Introduction to Streamlit.",
           "category": "Beginner",
-          "description": "Using Lego to replicate a VEX environment: Students will work together dividing roles such as builder, coder, designer, to compete against each other. The challenge will be to get as many blocks (made of Lego) in their zone. They will get a 'base' bot that has all the basic functions, and they have to code the functions, build improvements so their bot can function better, and innovate and reiterate it like in the engineering design process of VEX. There will be a student helper at each team, guiding and providing specific assistance to the teams should they have any questions/concerns.",
-          "by": "Clementine Dantzer, Tiffany Hui, Shanice Lau, Eloise Dantzer, Hazel Choy",
-          "location": []
+          "description": "The workshop is designed to provide participants with a hands-on introduction to building simple, interactive data applications using Streamlit. It focuses on lowering the barrier to entry for data app development, enabling participants—especially beginners—to quickly prototype and deploy user-friendly data-driven tools.",
+          "by": "Pyladies",
+          "location":[]
        },
 
       {
           "id": "3",
+          "title": "Intro to Python Game Building",
+          "category": "Intermediate",
+          "description": "Learn Python by making a game! We're going to skip the boring lectures and learn how to apply Python concepts by making the fun logic game 'Bagels', where you guess a secret number. You'll start with simple commands and finish with a complete, playable text-based game that you can share with your friends. You will learn how to use variables, constants and basic loops, as well as more complex built-in functions.  By the end, you'll have a solid foundation in core programming concepts and the confidence to tackle your own projects.",
+          "by": "Student",
+          "location": []
+       },
+
+       {
+          "id": "4",
+          "title": "Vex and Lego",
+          "category": "Beginner",
+          "description": "Using lego to replicate a vex environment: students (30 total, 6 teams of 5), will work together dividing roles such as builder, coder, designer, to compete against each other. The challenge will be to get as many blocks (made of lego) in their zone (marked with masking tape, or small lego slab). They will get a 'base' bot that has all the basic functions, and they have to code the functions, build improvements so their bot can function better, and innovate and reiterate it like in the engineering design process of vex. There will be a student helper at each team, guiding and providing specific assistance to the teams should they have any questions/concerns.",
+          "by": "Student",
+          "location":[]
+       },
+
+       {
+          "id": "5",
           "title": "HTML + CSS Escape room",
           "category": "Advanced",
           "description": "This will be about HTML and CSS, where the students will get the chance to play an escape room based on the knowledge about web design.",
-          "by": "Joyce Jiang",
-          "location": []
+          "by": "Student",
+          "location":[]
        },
+      
 
-      {
-          "id": "4",
+       {
+          "id": "6",
           "title": "Art through Python",
           "category": "Intermediate",
           "description": "This workshop offers a practical introduction to creating digital art with Python Turtle. You'll learn to guide a virtual turtle using fundamental commands like forward() and left(), transforming lines of code into visual designs. Our goal is to make coding accessible and engaging, demonstrating how simple instructions can build into a complete picture. By the end, you will have the foundational skills to confidently code your own simple drawing from scratch.",
-          "by": "Gisele Sze, Silvia Zhou, Kiki Xie, Elaine Song",
+          "by": "Student",
           "location": []
        },
-
-
-      {
-          "id": "5",
-          "title": "Design your alarm ringtone",
-          "category": "Intermediate",
-          "description": "In this workshop, students explore the intersection of music and computer science by designing their own alarm ringtones. The objective is to cultivate understanding of digital sound synthesis while fostering algorithmic thinking. Each participant will use computers equipped with headphones and access to EarSketch, a user-friendly platform utilizing Python or JavaScript.",
-          "by": "Coco Chen, Yui Wing, Junie",
-          "location": []
-       },
-
-      {
-          "id": "6",
-          "title": "Beyond ChatGPT - Study smarter not harder",
-          "category": "No coding",
-          "description": "In this workshop, participants will explore a variety of free, innovative AI tools designed to enhance their studying experience while maintaining ethical standards. Attendees will learn how to leverage these tools to streamline research, improve organisation, and foster creativity without compromising academic integrity.",
-          "by": "Hailey Chan, Katelyn Lee",
-          "location": []
-       },
-
       
+
+
       {
           "id": "7",
-          "title": "Beginner's Guide to Arduino",
-          "category": "Beginner",
-          "description": "In this workshop, students learn the basics about how to program an Arduino microcontroller, as well as the science behind it. We will designing circuits and controlling LEDs by coding in Arduino IDE.",
-          "by": "Nicole Chu, Fiona Qu",
-          "location": []
+          "title": "Design your alarm ringtone",
+          "category": "Intermediate",
+          "description": "In this workshop, students explore the intersection of music and computer science by designing their own alarm ringtones. The objective is to cultivate understanding of digital sound synthesis while fostering algorithmic thinking. Each participant will use computers equipped with headphones and access to EarSketch, a user-friendly platform utilizing Python or JavaScript. The workshop begins with a discussion about effective alarm tones, followed by examples of coded music to inspire creativity. Students will learn the basics through hands-on activities, creating their first drum loop and exploring musical patterns. As they dive deeper, they'll design alarm ringtones incorporating loops, varied instruments, and gradual changes, while collaboratively providing peer feedback.This experience emphasizes creativity as a key motivator in learning computer science, irrespective of musical background.",
+          "by": "Student",
+          "location":[]
        },
 
-      {
+       {
           "id": "8",
-          "title": "Quantum Computing Hardware & Processes",
+          "title": "Beyond ChatGPT - Study smarter not harder",
           "category": "Beginner",
-          "description": "This workshop explains the three principles of quantum computing and how they are implemented into the hardware of a quantum computer. It also mentions the different ways that qubits are represented in different quantum computer, to the methods of reducing decoherence and exploring how quantum gates are formed. This workshop defines quantum annealing and teleportation; it discusses how they contribute to the overall design of a quantum computer.",
-          "by": "Eunice Fung",
+          "description": "In this workshop 'Beyond ChatGPT - Study Smarter, Not Harder,' participants will explore a variety of free, innovative AI tools designed to enhance their studying experience while maintaining ethical standards. Attendees will learn how to leverage these tools to streamline research, improve organisation, and foster creativity without compromising academic integrity. This sessions aims to teach participants the following: Prompt for Understanding, Not Just Answers: Craft prompts that force AI to explain concepts, quiz them, and connect ideas, deepening their understanding instead of compromising it.  Create Personalised Study Aids: Go beyond generic quizlet flashcards. We'll show attendees how to use AI to generate practice questions, build study schedules, and create analogies that make sense to them. Navigate the Grey Areas: We'll tackle the tough questions, such as what's the difference between brainstorming and plagarizing? When does paraphrasing with AI become academic dishonesty? We'll provide clear guidelines. By the end of the session, our goal is for students to leave with a toolkit of resources and practical strategies to elevate their academic performance and promote responsible AI usage. Join us for an enlightening adventure into the world of AI-powered studying where fun meets ethics.",
+          "by": "Student",
           "location": []
        },
+      
 
-      // session 2
+
       {
           "id": "9",
-          "title": "Python Sorting & Search Algorithms",
-          "category": "Intermediate",
-          "description": "Do you seek to improve your logical thinking and coding skills? In this workshop, students will learn about Python searching and sorting algorithms. These fundamental concepts in Python programming can also be applied to other languages. Searching and sorting are useful in various aspects of computer science, such as robotics and software development. Knowing how to implement searching and sorting algorithms is a crucial skill that can help students throughout their coding journey. We require students to have only a basic understanding of Python, such as loops and conditional statements. In this session, through group and class discussions, visual demonstrations and interactive activities, they will not only learn how to implement the algorithms, but also the applications, advantages and disadvantages of each.",
-          "by": "Audrey Wong, Amelia Chan, Amelia Teoh, Ella Chan, Vedika Agarwal",
-          "location": []
+          "title": "Beginner's Guide to Arduino",
+          "category": "Beginner",
+          "description": "In this workshop, students learn the basics about how to program an Arduino microcontroller, as well as the science behind it. We will designing circuits and controlling LEDs by coding in Arduino IDE (however no prior coding experience is required!)",
+          "by": "Student",
+          "location":[]
        },
 
        {
           "id": "10",
-          "title": "Combinational Games",
-          "category": "No coding",
-          "description": "This workshop provides a technical introduction to key results in combinatorial game theory, focusing on draw impossibility proofs and the existence of winning strategies in finite, perfect-information games. We will also introduce Zermelo’s Theorem, formalising the conditions of finite, alternating-move, perfect-information games with no chance elements, and showing that such games necessarily admit a winning strategy for one player.",
-          "by": "Livia Bao",
+          "title": "Quantum Computing Hardware & Processes",
+          "category": "Beginner",
+          "description": "This workshop explains the three principles of quantum computing and how they are implemented into the hardware of a quantum computer. It also mentions the different ways that qubits are represented in different quantum computer, to the methods of reducing decoherence and exploring how quantum gates are formed. This workshop defines quantum annealing and teleportation; it discusses how they contribute to the overall design of a quantum computer.",
+          "by": "Student",
           "location": []
        },
+      
+
 
       {
           "id": "11",
-          "title": "Robomasters - Code & Race",
-          "category": "Beginner",
-          "description": "Robomasters is a competition with mini tanks, it has a program period and a battle period. This workshop is only related to the program period which involves block code. Participants will form groups to write code for the tanks to navigate through obstacle courses (which will be provided) and learn to work in implementing code in actual robots. They do not need any experience in coding, as it would be kept simple with front, left, right, back for moving directions, along with wait, and when participants are capable (optional), moving at an angle and rotation.",
-          "by": "Summer Li, Lucas Chan, Abby Lau, Jack Loo, Pansy Ho",
-          "location": []
-       },
-
-      {
-          "id": "12",
-          "title": "Make your own adventure with Python",
-          "category": "Intermediate",
-          "description": "Make Your Own Adventure with Python is a hands‑on workshop designed for beginners who want to take their first steps into the world of coding. In this interactive session, participants will learn the essentials of Python programming through creative storytelling and game design. Using simple commands, variables, and loops, students will build their own text‑based adventure game—where every choice leads to a new twist in the story. The workshop focuses on core programming concepts in an approachable, beginner‑friendly format. By the end of the session, participants will understand how to store information using variables, repeat actions with loops, and control the flow of their program with conditional statements. Each concept is introduced through clear examples, collaborative activities, and plenty of opportunities to experiment and play. No advanced coding experience is required—just curiosity and imagination. By turning code into a storytelling tool, learners discover how programming can be both logical and creative. Whether building a heroic quest, a mystery, or a silly adventure, each participant will leave with a working project and the confidence to keep exploring Python on their own.",
-          "by": "Ishika Kohli, Lynn Zhang",
-          "location": []
-       },
-
-      {
-          "id": "13",
-          "title": "Treasure Hunt with Python Turtles",
-          "category": "Beginner",
-          "description": "You’ve just arrived on an exotic island… and there are treasure chests hidden all around! Can you use Turtles to draw the path on the map to the ultimate prize? In this fun-filled workshop, you’ll learn fundamental coding concepts such as basic Python functions and loops that will come in handy when coding in the future! No prior coding experience is needed!",
-          "by": "Janey Xing, Ying Ling Wong, Suan Lee, Kylie Lau",
-          "location": []
-       },
-
-      {
-          "id": "14",
           "title": "Computational Neuroscience",
           "category": "Intermediate",
           "description": "This course is specifically designed for anyone that has an interest in neuroscience as well as involving mathematics, computer science, theoretical analysis, and computational modelling to understand aspects of neuroscience like physiology, structure, cognitive functions, and the development of the brain.",
-          "by": "Hannah Kwok",
+          "by": "Student",
+          "location":[]
+       },
+
+       {
+          "id": "12",
+          "title": "Making Tic Tac Toe with Pygame",
+          "category": "Intermediate",
+          "description": "In this workshop, we will explore the basic functions and setup of using pygame. This includes learning the structure of pygame, the setup, and the main functions and logic required for the final project. The main goal of this workshop is to create and personalise a Tic Tac Toe game. Before you choose to join, please make sure you have a basic knowledge of python (e.g. loops, if statements, variables etc.) and have pygame installed. To install pygame type in the terminal: pip install pygame. If that doesn't work: pip3 install pygame",
+          "by": "Student",
+          "location": []
+       },
+      
+
+
+      {
+          "id": "13",
+          "title": "Her Lens, Her Story",
+          "category": "Beginner",
+          "description": "Discover how to bring your ideas to the screen. This workshop covers the full process of making a short film, from script and sketches to filming, editing, and adding music. You’ll design a narrative project that explores real-world scientific problems or STEM themes, blending storytelling with technical understanding. Learn the language of visual storytelling through different shots and camera movements, with a hands-on session to try them out to express scientific concepts and discoveries.  In collaboration with Babel Film Workshop, we'll also provide ways to practice your new skills and introduce upcoming film competitions for aspiring filmmakers.",
+          "by": "Student",
+          "location":[]
+       },
+       
+             {
+          "id": "14",
+          "title": "AI & Empathy - Can machines understand us?",
+          "category": "Beginner",
+          "description": "Artificial intelligence depends on data completely. What we “feed” it shapes how it learns, responds, and interacts with us. This workshop explores the fascinating intersection of computer science and psychology by diving deeper on how AI systems process information and whether they can truly understand our emotions. Participants will be introduced to the concept of “training data” and how it influences machine learning models. We’ll look at examples of some emotional recognition technologies, and the psychological implications: what does it mean when a machine claims to “recognize” sadness, joy, or anger? How close are these systems to genuine empathy, and what are they missing? This session is made for curious minds who want to understand both the technical mechanics and the human impact of AI. By the end, participants will walk out with a clearer picture of how machines interpret emotions.",
+          "by": "Student",
+          "location":[]
+       },
+
+       {
+          "id": "15",
+          "title": "Making Snapchat Filter",
+          "category": "Intermediate",
+          "description": "In this beginner-friendly workshop, you’ll code your own live Snapchat-style filter from scratch. You’ll first create your own fun filters, and then use AI machine learning to make your filters respond to different facial expressions. By the end, you’ll have an interactive camera filter and a taste of computer vision and creative coding. No prior experience needed!",
+          "by": "Student",
+          "location":[]
+       },
+      
+
+
+      {
+          "id": "16",
+          "title": "Preface Coding Class",
+          "category": "",
+          "description": "TBC",
+          "by": "Preface",
           "location": []
        },
 
-      {
-          "id": "15",
-          "title": "Making Tic Tac Toe with Pygame",
-          "category": "Intermediate",
-          "description": "In this workshop, we will explore the basic functions and setup of using pygame. This includes learning the structure of pygame, the setup, and the main functions and logic required for the final project. The main goal of this workshop is to create and personalise a Tic Tac Toe game. Before you choose to join, please make sure you have a basic knowledge of python (e.g. loops, if statements, variables etc.) and have pygame installed. To install pygame, type in the terminal: pip install pygame. If that doesn't work, type: pip3 install pygame. ",
-          "by": "Leanna Lee, Xinyi Zhang",
+             {
+          "id": "17",
+          "title": "AI Literacy",
+          "category": "",
+          "description": "TBC",
+          "by": "HKU",
           "location": []
        },
 
        {
-          "id": "16",
-          "title": "Her Lens, Her Story",
-          "category": "No coding",
-          "description": "Discover how to bring your ideas to the screen. This workshop covers the full process of making a short film, from script and sketches to filming, editing, and adding music. You’ll design a narrative project that explores real-world scientific problems or STEM themes, blending storytelling with technical understanding. Learn the language of visual storytelling through different shots and camera movements, with a hands-on session to try them out to express scientific concepts and discoveries.  In collaboration with Babel Film Workshop, we'll also provide ways to practice your new skills and introduce upcoming film competitions for aspiring filmmakers.",
-          "by": "Molly Zhou, Hailey Ng",
+          "id": "18",
+          "title": "Python Sorting & Search Algorithms",
+          "category": "Intermediate",
+          "description": "Do you seek to improve your logical thinking and coding skills? In this workshop, students will learn about Python searching and sorting algorithms. These fundamental concepts in Python programming can also be applied to other languages. Searching and sorting are useful in various aspects of computer science, such as robotics and software development. Knowing how to implement searching and sorting algorithms is a crucial skill that can help students throughout their coding journey. We require students to have only a basic understanding of Python, such as loops and conditional statements. In this session, through group and class discussions, visual demonstrations and interactive activities, they will not only learn how to implement the algorithms, but also the applications, advantages and disadvantages of each. ",
+          "by": "Student",
           "location": []
        },
+      
 
 
       {
-          "id": "17",
-          "title": "AI & Empathy - Can machines understand us?",
-          "category": "No coding",
-          "description": "Artificial intelligence depends on data completely. What we “feed” it shapes how it learns, responds, and interacts with us. This workshop explores the fascinating intersection of computer science and psychology by diving deeper on how AI systems process information and whether they can truly understand our emotions. Participants will be introduced to the concept of “training data” and how it influences machine learning models. We’ll look at examples of some emotional recognition technologies, and the psychological implications: what does it mean when a machine claims to “recognize” sadness, joy, or anger? How close are these systems to genuine empathy, and what are they missing? This session is made for curious minds who want to understand both the technical mechanics and the human impact of AI. By the end, participants will walk out with a clearer picture of how machines interpret emotions.",
-          "by": "Elsie Li, Hayley Yiu, Bethany Huddart",
+          "id": "19",
+          "title": "Combinational Games",
+          "category": "Beginner",
+          "description": "This workshop provides a technical introduction to key results in combinatorial game theory, focusing on draw impossibility proofs and the existence of winning strategies in finite, perfect-information games. We will also introduce Zermelo’s Theorem, formalising the conditions of finite, alternating-move, perfect-information games with no chance elements, and showing that such games necessarily admit a winning strategy for one player.",
+          "by": "Student",
           "location": []
-       }
+       },
+
+             {
+          "id": "20",
+          "title": "Robomasters - Code & Race",
+          "category": "Beginner",
+          "description": "Robomasters is a competition with mini tanks, it has a program period and a battle period. This workshop is only related to the program period which involves block code. Participants will form groups to write code for the tanks to navigate through obstacle courses (which will be provided) and learn to work in implementing code in actual robots.  They do not need any experience in coding, as it would be kept simple with front, left, right, back for moving directions, along with wait, and when participants are capable (optional), moving at an angle and rotation.",
+          "by": "Student",
+          "location":[]
+       },
+
+       {
+          "id": "21",
+          "title": "Make your own adventure with Python",
+          "category": "Intermediate",
+          "description": "Make Your Own Adventure with Python is a hands‑on workshop designed for beginners who want to take their first steps into the world of coding. In this interactive session, participants will learn the essentials of Python programming through creative storytelling and game design. Using simple commands, variables, and loops, students will build their own text‑based adventure game—where every choice leads to a new twist in the story. The workshop focuses on core programming concepts in an approachable, beginner‑friendly format. By the end of the session, participants will understand how to store information using variables, repeat actions with loops, and control the flow of their program with conditional statements. Each concept is introduced through clear examples, collaborative activities, and plenty of opportunities to experiment and play. No advanced coding experience is required—just curiosity and imagination. By turning code into a storytelling tool, learners discover how programming can be both logical and creative. Whether building a heroic quest, a mystery, or a silly adventure, each participant will leave with a working project and the confidence to keep exploring Python on their own.",
+          "by": "Student",
+          "location": []
+       },
+      
+
+
+      {
+          "id": "22",
+          "title": "Treasure Hunt with Python Turtles",
+          "category": "Beginner",
+          "description": "You’ve just arrived on an exotic island… and there are treasure chests hidden all around! Can you use Turtles to draw the path on the map to the ultimate prize? In this fun-filled workshop, you’ll learn fundamental coding concepts such as basic Python functions and loops that will come in handy when coding in the future!  No prior coding experience is needed!",
+          "by": "Student",
+          "location": []
+       },
+
     ]
   }
 

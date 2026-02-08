@@ -44,15 +44,15 @@ export default function CodeHers2026Page() {
           <h2 className="text-4xl font-extrabold tracking-wide text-text-900 sm:text-5xl">
         2026 Workshops
          </h2>
-          <h2 className="text-4xl font-extrabold tracking-wide text-text-900 sm:text-5xl">
+          {/* <h2 className="text-4xl font-extrabold tracking-wide text-text-900 sm:text-5xl">
             More information coming soon...
-          </h2>
+          </h2> */}
 
 
 
 
 {/* Workshops Information */}
-    {/* <div style={{
+    <div style={{
       backgroundColor: '#fff',
       padding: '20px 30px',
       borderRadius: '8px',
@@ -73,18 +73,7 @@ export default function CodeHers2026Page() {
         alignItems: 'flex-start',
         gap: '10px' 
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{
-            backgroundColor: '#e0e0e0',
-            color: '#555',
-            padding: '4px 12px',
-            borderRadius: '12px',
-            fontSize: '13px',
-            fontWeight: '500'
-          }}>No coding</span>
-          <span style={{ fontSize: '14px', color: '#666' }}>No coding required</span>
-        </div>
-        
+
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{
             backgroundColor: '#a8e6cf',
@@ -121,9 +110,9 @@ export default function CodeHers2026Page() {
           <span style={{ fontSize: '14px', color: '#666' }}>Proficient understanding of programming skills</span>
         </div>
       </div>
-    </div> */}
+    </div>
 
-          {/* <div className="mt-4">{scheduleSections}</div> */}
+          <div className="mt-4">{scheduleSections}</div>
 
 
         </div>
