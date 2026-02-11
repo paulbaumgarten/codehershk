@@ -1,1 +1,0 @@
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,28321,e=>{"use strict";var t=e.i(71645);function o(){return(0,t.useEffect)(()=>{window.location.replace("https://app.codeherhk.org/hkace")},[]),null}e.s(["default",()=>o])}]);
