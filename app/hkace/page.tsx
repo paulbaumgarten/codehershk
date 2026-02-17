@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 export default function RedirectToMain() {
 
   useEffect(() => {
-    window.location.replace("https://app.codeherhk.org/hkace");
+    window.location.replace("https://app.codehershk.org/hkace");
   }, []);
   
   return null;
