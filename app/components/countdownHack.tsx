@@ -52,7 +52,7 @@ function CountdownHack() {
       <div className="bg-transparent flex flex-col items-center justify-center p-6">
         <div className="text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-pink-500 mb-4">
-            We are no longer accepting submission for this year's hackathon. Hope to see you next year!
+            We are no longer accepting submissions for this year's hackathon. Hope to see you next year!
           </h2>
         </div>
       </div>
@@ -64,7 +64,7 @@ function CountdownHack() {
       <div className="text-center mb-6 md:mb-8">
                 <h1 className="block text-1xl font-extrabold tracking-wide text-center text-text-900 sm:text-5xl">
 Hackathon Submission Deadline</h1>
-        <p className="text-pink-400 text-base md:text-lg">February 21, 2026 • 11:59 PM HKT</p>
+        <p className="text-pink-400 text-base md:text-lg">February 21, 2026 • 11:59 PM HKT)</p>
       </div>
       
       <div className="flex gap-2 md:gap-3">

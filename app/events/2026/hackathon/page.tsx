@@ -32,6 +32,17 @@ export default function HackathonPage() {
             </b>{" "}
             2nd Hackathon
           </h1>
+
+            <div
+        id="hackathon-details"
+        className="flex flex-col md:p-8 space-y-8 rounded-xl"
+      >
+        {/* <h2 className="block text-3xl bg-primary-100 rounded-lg  px-6 py-2 font-extrabold tracking-wide text-center text-text-900 sm:text-6xl">
+          EXTENDED DEADLINE TO FEB 26TH, 11:59PM!
+        </h2>*/}
+        </div>
+
+      <div>
           <p className="text-text-700 text-lg">            
             Welcome to the 2nd CodeHers Hackathon, an exciting opportunity to encourage girls of all ages to showcase their talents and passions in STEM!
 
@@ -42,6 +53,10 @@ export default function HackathonPage() {
 
             This online hackathon will take place from January to February 21st, leading to a live finals and award ceremony on March 7th. 
                       </p>
+
+        </div>
+
+
 
       
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -77,6 +92,7 @@ export default function HackathonPage() {
         {/* OPTIONAL: Put an image/graphic on the right */}
         <div className="flex-grow" />
       </div>
+
 
       {/* Countdown with Mascot */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
