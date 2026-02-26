@@ -153,6 +153,63 @@ export default function CodeHers2026Page() {
       </div>
 
 
+<div className="w-full py-10 mx-auto space-y-8 text-center lg:py-16">
+  <div className="flex flex-col space-y-4">
+    <h2 className="block text-4xl font-extrabold tracking-wide text-text-900 sm:text-6xl">
+      Event Schedule
+    </h2>
+    
+    {/* Schedule with times inline */}
+    <div className="max-w-2xl mx-auto mt-8 space-y-2 text-left">
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">9:30</span>
+        <span className="text-text-800">Doors open</span>
+      </div>
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">10:15</span>
+        <span className="text-text-800">Welcome</span>
+      </div>
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">10:30</span>
+        <span className="text-text-800">Keynote by Ms Rebecca Yip</span>
+      </div>
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">11:10</span>
+        <span className="text-text-800">Workshops Session 1</span>
+      </div>
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">12:40</span>
+        <span className="text-text-800">Lunch</span>
+      </div>
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">13:30</span>
+        <span className="text-text-800">Hackathon Showcase & Exhibitions</span>
+      </div>
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">14:00</span>
+        <span className="text-text-800">Discussion Q&A Panel - with leading women in the tech industry in HK</span>
+      </div>
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">14:40</span>
+        <span className="text-text-800">Workshops Session 2</span>
+      </div>
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">16:00</span>
+        <span className="text-text-800">Prizes and Closing Ceremony</span>
+      </div>
+      <div className="flex items-start gap-4 py-2 border-b border-text-100">
+        <span className="min-w-[80px] font-semibold text-text-900">16:20</span>
+        <span className="text-text-800">Snack time & Final XP Store opportunity</span>
+      </div>
+      <div className="flex items-start gap-4 py-2">
+        <span className="min-w-[80px] font-semibold text-text-900">16:40</span>
+        <span className="text-text-800">Buses leave</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       {/* 3) Highlights Video + PDF Links */}
       <section className="w-full py-10 mx-auto space-y-6 text-center lg:py-16">
         <h2 className="block text-4xl font-extrabold tracking-wide text-text-900 sm:text-5xl">
