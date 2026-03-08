@@ -52,7 +52,7 @@ function Countdown() {
       <div className="bg-transparent flex flex-col items-center justify-center p-6">
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-pink-500 mb-4">
-            🎉 CodeHers 2026 has started! 🎉
+            🎉 That's a wrap on CodeHers 2026! See you next year! 🎉
           </h1>
         </div>
       </div>
